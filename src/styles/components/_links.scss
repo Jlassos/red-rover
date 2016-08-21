@@ -1,0 +1,11 @@
+@import "../_variables";
+
+.inlineLink {
+  color: $red;
+  font-weight: 600;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
