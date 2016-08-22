@@ -30,9 +30,12 @@ const paths = {
 // -------------------------------------
 gulp.task('build', (cb) => {
   runSequence(
-    'build:html',
-    'build:styles',
-    'build:js',
+    'clean',
+    [
+      'build:html',
+      'build:styles',
+      'build:js',
+    ],
     cb
   )
 })
@@ -103,7 +106,6 @@ gulp.task('watch:js', (cb) => {
 // -------------------------------------
 gulp.task('default', (cb) => {
   runSequence(
-    'clean',
     'build',
     'watch',
     'serve',

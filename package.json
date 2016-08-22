@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "build": "gulp build",
     "build:html": "gulp build:html",
     "build:styles": "gulp build:styles",
     "clean:html": "gulp clean:html",
-    "serve": "gulp serve"
+    "serve": "gulp serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -22,6 +25,7 @@
   "homepage": "https://github.com/Jlassos/red-rover#readme",
   "devDependencies": {
     "del": "^2.2.0",
+    "gh-pages": "^0.11.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^4.1.0",
     "gulp-htmlmin": "^2.0.0",
