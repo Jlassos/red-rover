@@ -4,6 +4,7 @@ const del = require('del')
 const runSequence = require('run-sequence')
 const connect = require('gulp-connect')
 const sass = require('gulp-sass')
+const moduleImporter = require('sass-module-importer')
 
 const paths = {
   server: {
@@ -25,6 +26,9 @@ const paths = {
     watch: 'src/js/**/*',
   },
 }
+const moduleImporterOptions = { basedir: __dirname }
+var sassOptions = { importer: moduleImporter(moduleImporterOptions) }
+
 // -------------------------------------
 // Build
 // -------------------------------------
@@ -51,7 +55,7 @@ gulp.task('build:html', () => {
 
 gulp.task('build:styles', () => {
   return gulp.src(paths.styles.src)
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass(sassOptions).on('error', sass.logError))
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(connect.reload())
 })
