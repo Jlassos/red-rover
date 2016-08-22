@@ -1,0 +1,39 @@
+@import "variables";
+
+$docs_background: #333;
+
+html {
+  background: $docs_background;
+}
+
+body {
+  width: 30em;
+  margin: auto;
+}
+
+.rr-example {
+  background: $docs_background;
+  .header {
+    margin: 1em 0 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    color: lighten($docs_background, 50);
+    text-shadow: 0 1px darken($docs_background, 50);
+  }
+  .content {
+    margin: 2em 0;
+    background: $body_background;
+  }
+
+  pre {
+    padding: 1em;
+    font-size: 0.825em;
+    opacity: 0.5;
+    transition: opacity 200ms ease-out, background 200ms ease-out;
+    background: mix(#1d1f21, $docs_background, 50);
+    &:hover {
+    background: #1d1f21;
+      opacity: 1;
+    }
+  }
+}

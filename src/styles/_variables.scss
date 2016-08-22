@@ -9,6 +9,8 @@ $gray: rgb(44, 48, 52);
 $gray_light: fade($gray, 0.5);
 $gray_lighter: fade($gray, 0.2);
 
+$body_background: #FFF;
+
 // ----------------------------------------
 // Typography
 
@@ -23,9 +25,9 @@ $base_color: $gray;
 // ----------------------------------------
 // Padding
 
-$base_padding: 0.5em;
+$base_padding: 1em;
 $base_padding_horizontal: $base_padding * 2;
-$base_padding_vertical: $base_padding * 0.5;
+$base_padding_vertical: $base_padding * 1;
 
 // ----------------------------------------
 // Border

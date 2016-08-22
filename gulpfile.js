@@ -5,25 +5,37 @@ const runSequence = require('run-sequence')
 const connect = require('gulp-connect')
 const sass = require('gulp-sass')
 
-
 const paths = {
   server: {
-    root: 'dist'
+    root: 'dist',
   },
   html: {
     src: 'src/index.html',
     dest: 'dist',
-    watch: 'src/**/*'
+    watch: 'src/**/*',
   },
   styles: {
-    src: 'src/styles/main.scss',
+    src: ['src/styles/main.scss', 'src/styles/docs.scss'],
     dest: 'dist/styles',
-    watch: 'src/styles/**/*.scss'
-  }
+    watch: 'src/styles/**/*.scss',
+  },
+  js: {
+    src: 'src/js/*.js',
+    dest: 'dist/js',
+    watch: 'src/js/**/*',
+  },
 }
 // -------------------------------------
 // Build
 // -------------------------------------
+gulp.task('build', (cb) => {
+  runSequence(
+    'build:html',
+    'build:styles',
+    'build:js',
+    cb
+  )
+})
 gulp.task('build:html', () => {
   return gulp.src(paths.html.src)
     .pipe(htmlmin({
@@ -40,11 +52,17 @@ gulp.task('build:styles', () => {
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(connect.reload())
 })
+
+gulp.task('build:js', (cb) => {
+  return gulp.src(paths.js.src)
+    .pipe(gulp.dest(paths.js.dest))
+    .pipe(connect.reload())
+})
 // -------------------------------------
 // Clean
 // -------------------------------------
-gulp.task('clean:html', (cb) => {
-  del.sync(paths.html.dest + '/index.html')
+gulp.task('clean', (cb) => {
+  del.sync('dist')
   cb()
 })
 // -------------------------------------
@@ -60,23 +78,34 @@ gulp.task('serve', (cb) => {
 // -------------------------------------
 // Watch
 // -------------------------------------
-gulp.task('watch:html', () => {
-  gulp.watch(paths.html.watch, ['build:html'])
+gulp.task('watch', (cb) => {
+  runSequence(
+    'watch:html',
+    'watch:styles',
+    'watch:js',
+    cb
+  )
 })
-
-gulp.task('watch:styles', () => {
+gulp.task('watch:html', (cb) => {
+  gulp.watch(paths.html.watch, ['build:html'])
+  cb()
+})
+gulp.task('watch:styles', (cb) => {
   gulp.watch(paths.styles.watch, ['build:styles'])
+  cb()
+})
+gulp.task('watch:js', (cb) => {
+  gulp.watch(paths.js.watch, ['build:js'])
+  cb()
 })
 // -------------------------------------
 // Default
 // -------------------------------------
 gulp.task('default', (cb) => {
   runSequence(
-    'clean:html',
-    'build:html',
-    'build:styles',
-    'watch:html',
-    'watch:styles',
+    'clean',
+    'build',
+    'watch',
     'serve',
     cb
   )
