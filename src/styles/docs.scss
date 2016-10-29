@@ -1,40 +1,48 @@
 @import "variables";
 
-$docs_background: #333;
+$docs_background: #fff;
 
 html {
   background: $docs_background;
 }
 
 body {
-  width: 30em;
-  margin: auto;
+  background: $docs_background;
+  padding: 0 4em;
 }
 
 .docs-example {
+  padding: 2em 0;
   background: $docs_background;
+  //border-top: 2px solid #ddd;
+
   .docs-example-header {
-    padding: 1em 0 0.5em;
+    margin: 1em 0 2em 0;
     font-size: 1.5em;
     text-align: center;
-    color: lighten($docs_background, 50);
+    color: darken($docs_background, 50);
     text-shadow: 0 1px darken($docs_background, 50);
+    text-transform: uppercase;
   }
   .docs-example-content {
-    margin-bottom: 2em;
+    padding: 2em 0;
     background: $body_background;
   }
 
   pre {
     padding: 1em;
-    margin: 0;
+    padding-top: 2em;
     font-size: 0.825em;
-    opacity: 0.5;
-    transition: opacity 200ms ease-out, background 200ms ease-out;
-    background: mix(#1d1f21, $docs_background, 50);
-    &:hover {
-    background: #1d1f21;
-      opacity: 1;
+    border: 1px solid #ddd;
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: 'code';
+      padding: 0.15em 0.5em;
+      background: #eee;
+      color: #bbb;
     }
   }
 }

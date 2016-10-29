@@ -1,12 +1,15 @@
 // ----------------------------------------
 // Base
 
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "normalize.css/normalize.css";
+@import "font-awesome/css/font-awesome.css";
 @import "./_variables";
 
 // ----------------------------------------
 // Components
 
+@import "./components/_buttons";
 @import "./components/_image";
 @import "./components/_links";
 @import "./components/_rating";
