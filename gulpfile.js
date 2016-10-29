@@ -1,12 +1,13 @@
+const del = require('del')
 const gulp = require('gulp')
 const htmlmin = require('gulp-htmlmin')
-const del = require('del')
-const runSequence = require('run-sequence')
+const concat = require('gulp-concat')
 const connect = require('gulp-connect')
-const sass = require('gulp-sass')
 const moduleImporter = require('sass-module-importer')
+const runSequence = require('run-sequence')
 
 const paths = {
+  dest: 'dist',
   server: {
     root: 'dist',
   },
@@ -40,6 +41,7 @@ gulp.task('build', (cb) => {
       'build:styles',
       'build:js',
     ],
+    'build:selectors',
     cb
   )
 })
@@ -54,17 +56,36 @@ gulp.task('build:html', () => {
 })
 
 gulp.task('build:styles', () => {
+  const sass = require('gulp-sass')
+  const minifyCSS = require('gulp-minify-css')
   return gulp.src(paths.styles.src)
     .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(concat('main.css'))
+    .pipe(minifyCSS())
     .pipe(gulp.dest(paths.styles.dest))
     .pipe(connect.reload())
 })
 
 gulp.task('build:js', (cb) => {
+  const uglify = require('gulp-uglify')
   return gulp.src(paths.js.src)
+    .pipe(concat('main.js'))
+    .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
     .pipe(connect.reload())
 })
+
+gulp.task('build:selectors', (cb) => {
+  const ignores = {
+    classes: ['docs-*'],            // ignore these class selectors,
+  }
+
+  const selectors = require('gulp-selectors')
+  return gulp.src(paths.dest + '/**/*.*', { base: './' })
+    .pipe(selectors.run(null, ignores))
+    .pipe(gulp.dest('.'))
+})
+
 // -------------------------------------
 // Clean
 // -------------------------------------

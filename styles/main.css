@@ -1,0 +1,275 @@
+/*! normalize.q v4.1.1 | MIT License | github.com/necolas/normalize.q */
+progress, sub, sup {
+  vertical-align: baseline
+}
+
+button, hr, input {
+  overflow: visible
+}
+
+[type=checkbox], [type=radio], legend {
+  box-sizing: border-box;
+  padding: 0
+}
+
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary {
+  display: block
+}
+
+audio, canvas, progress, video {
+  display: inline-block
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0
+}
+
+[hidden], template {
+  display: none
+}
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects
+}
+
+a:active, a:hover {
+  outline-width: 0
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+b, strong {
+  font-weight: bolder
+}
+
+dfn {
+  font-style: italic
+}
+
+h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+mark {
+  background-color: #ff0;
+  color: #000
+}
+
+small {
+  font-size: 80%
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative
+}
+
+.r, .r img {
+  vertical-align: top;
+  max-width: 100%
+}
+
+sub {
+  bottom: -.25em
+}
+
+sup {
+  top: -.5em
+}
+
+img {
+  border-style: none
+}
+
+svg:not(:root) {
+  overflow: hidden
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em
+}
+
+figure {
+  margin: 1em 40px
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0
+}
+
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0
+}
+
+optgroup {
+  font-weight: 700
+}
+
+button, select {
+  text-transform: none
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+  border-style: none;
+  padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+  outline: ButtonText dotted 1px
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal
+}
+
+textarea {
+  overflow: auto
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+  height: auto
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: .54
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit
+}
+
+.r {
+  display: inline-block;
+  overflow: hidden
+}
+
+.r.s {
+  border-radius: 999px
+}
+
+.t {
+  color: #F7253E;
+  font-weight: 600;
+  text-decoration: none
+}
+
+.t:hover {
+  text-decoration: underline
+}
+
+.u {
+  display: flex
+}
+
+.u .v {
+  flex: 1;
+  padding: 1em 2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+  font-size: .75em;
+  text-align: center;
+  font-weight: 700
+}
+
+.u .v.w, .u .v:active, .u .v:hover {
+  color: #F7253E;
+  text-decoration: none
+}
+
+.u .v.w {
+  border-bottom: 3px solid #F7253E
+}
+
+.u .v:focus {
+  text-decoration: none
+}
+
+body, html {
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  background: #FFF
+}
+
+.x, .y, .z, .aa, .ab, .ac, h1, h2, h3, h4, h5, h6 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600
+}
+
+.ad, html {
+  background: #333
+}
+
+body {
+  width: 30em;
+  margin: auto
+}
+
+.ad .ae {
+  padding: 1em 0 .5em;
+  font-size: 1.5em;
+  text-align: center;
+  color: #b3b3b3;
+  text-shadow: 0 1px #000
+}
+
+.ad .af {
+  margin-bottom: 2em;
+  background: #FFF
+}
+
+.ad pre {
+  padding: 1em;
+  margin: 0;
+  font-size: .825em;
+  opacity: .5;
+  transition: opacity .2s ease-out, background .2s ease-out;
+  background: #28292a
+}
+
+.ad pre:hover {
+  background: #1d1f21;
+  opacity: 1
+}

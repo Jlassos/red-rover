@@ -9,9 +9,14 @@
     "build:html": "gulp build:html",
     "build:styles": "gulp build:styles",
     "clean:html": "gulp clean:html",
-    "serve": "gulp serve",
+    "postinstall": "npm run build",
     "predeploy": "npm run build",
+    "serve": "gulp serve",
+    "serve:production": "http-server dist",
     "deploy": "gh-pages -d dist"
+  },
+  "engines": {
+    "node": "6"
   },
   "repository": {
     "type": "git",
@@ -23,21 +28,22 @@
     "url": "https://github.com/Jlassos/red-rover/issues"
   },
   "homepage": "https://github.com/Jlassos/red-rover#readme",
-  "devDependencies": {
+  "dependencies": {
     "del": "^2.2.0",
     "gh-pages": "^0.11.0",
     "gulp": "^3.9.1",
-    "gulp-connect": "^4.1.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^5.0.0",
     "gulp-htmlmin": "^2.0.0",
+    "gulp-minify-css": "^1.2.4",
     "gulp-sass": "^2.3.2",
+    "gulp-selectors": "^0.1.9",
+    "gulp-uglify": "^2.0.0",
+    "http-server": "^0.9.0",
     "normalize.css": "^4.2.0",
     "run-sequence": "^1.2.1",
     "sass-module-importer": "^1.2.1"
-  },
-  "dependencies": {
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-clean-css": "^2.0.12",
-    "gulp-connect": "^5.0.0",
-    "gulp-sass": "^2.3.2"
   }
 }

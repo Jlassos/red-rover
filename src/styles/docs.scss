@@ -11,16 +11,16 @@ body {
   margin: auto;
 }
 
-.rr-example {
+.docs-example {
   background: $docs_background;
-  .header {
+  .docs-example-header {
     padding: 1em 0 0.5em;
     font-size: 1.5em;
     text-align: center;
     color: lighten($docs_background, 50);
     text-shadow: 0 1px darken($docs_background, 50);
   }
-  .content {
+  .docs-example-content {
     margin-bottom: 2em;
     background: $body_background;
   }
