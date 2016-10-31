@@ -17,4 +17,4 @@ npm start
 npm run deploy
 ```
 
-[1]: https://jlassos.github.io/red-rover
+[1]: https://red-rover.herokuapp.com
