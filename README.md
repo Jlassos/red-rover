@@ -1,8 +1,10 @@
-# [red-rover][1]
+# RedRover
+ 
+The CSS framework for RedRover.
 
-## Docs
+### Docs
 
-Checkout the [doc site][1].
+[https://red-rover.herokuapp.com][1]
 
 ## Development
 

@@ -14,8 +14,7 @@
     "postinstall": "npm run build",
     "predeploy": "npm run build",
     "serve": "gulp serve",
-    "serve:production": "http-server dist",
-    "deploy": "gh-pages -d dist"
+    "serve:production": "http-server dist"
   },
   "engines": {
     "node": "6"
@@ -33,7 +32,6 @@
   "dependencies": {
     "del": "^2.2.0",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^0.11.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-clean-css": "^2.0.13",
