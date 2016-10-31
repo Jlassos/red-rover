@@ -2,14 +2,13 @@ const del = require('del')
 const gulp = require('gulp')
 const htmlmin = require('gulp-htmlmin')
 const concat = require('gulp-concat')
-const connect = require('gulp-connect')
+const webserver = require('gulp-webserver')
 const cleanCSS = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const uglify = require('gulp-uglify')
 const runSequence = require('run-sequence')
 
 const paths = {
-  dest: 'dist',
   server: {
     root: 'dist',
   },
@@ -53,7 +52,6 @@ gulp.task('build', (cb) => {
 gulp.task('build:fonts', () => {
   return gulp.src(paths.fonts.src)
     .pipe(gulp.dest(paths.fonts.dest))
-    .pipe(connect.reload())
 })
 gulp.task('build:html', () => {
   return gulp.src(paths.html.src)
@@ -62,7 +60,6 @@ gulp.task('build:html', () => {
       removeComments: true
     }))
     .pipe(gulp.dest(paths.html.dest))
-    .pipe(connect.reload())
 })
 
 gulp.task('build:styles', () => {
@@ -71,7 +68,6 @@ gulp.task('build:styles', () => {
     .pipe(concat('main.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.styles.dest))
-    .pipe(connect.reload())
 })
 
 gulp.task('build:js', (cb) => {
@@ -79,7 +75,6 @@ gulp.task('build:js', (cb) => {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
-    .pipe(connect.reload())
 })
 
 // -------------------------------------
@@ -93,11 +88,13 @@ gulp.task('clean', (cb) => {
 // Serve
 // -------------------------------------
 gulp.task('serve', (cb) => {
-  connect.server({
-    root: paths.server.root,
-    livereload: true
-  })
-  cb()
+  return gulp.src(paths.server.root)
+    .pipe(webserver({
+      host: 'localhost',
+      port: 8080,
+      livereload: true,
+      open: true,
+    }))
 })
 // -------------------------------------
 // Watch
