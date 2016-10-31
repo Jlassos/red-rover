@@ -5,9 +5,9 @@
 // Colors
 
 $red: #F7253E;
-$gray: rgb(44, 48, 52);
-$gray_light: fade($gray, 0.5);
-$gray_lighter: fade($gray, 0.2);
+$gray: #2c3034;
+$gray_light: #96989a;
+$gray_lighter: #d4d5d6;
 
 $body_background: #FFF;
 
@@ -16,6 +16,7 @@ $body_background: #FFF;
 
 $base_font_family: Raleway, sans-serif;
 $base_font_size: 15px;
+$font_size_small: 13px;
 
 $base_font_weight: 400;
 $base_line_height: 25px;
