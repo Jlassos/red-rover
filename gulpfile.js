@@ -7,7 +7,6 @@ const cleanCSS = require('gulp-clean-css')
 const sass = require('gulp-sass')
 const uglify = require('gulp-uglify')
 const runSequence = require('run-sequence')
-const moduleImporter = require('sass-module-importer')
 
 const paths = {
   dest: 'dist',
@@ -24,14 +23,17 @@ const paths = {
     dest: 'dist/styles',
     watch: 'src/styles/**/*.scss',
   },
+  fonts: {
+    src: ['node_modules/font-awesome/fonts/**/*.*'],
+    dest: 'dist/fonts',
+    watch: 'src/fonts/**/*.*',
+  },
   js: {
     src: 'src/js/**/*.js',
     dest: 'dist/js',
     watch: 'src/js/**/*',
   },
 }
-const moduleImporterOptions = { basedir: __dirname }
-var sassOptions = { importer: moduleImporter(moduleImporterOptions) }
 
 // -------------------------------------
 // Build
@@ -41,11 +43,17 @@ gulp.task('build', (cb) => {
     'clean',
     [
       'build:html',
+      'build:fonts',
       'build:styles',
       'build:js',
     ],
     cb
   )
+})
+gulp.task('build:fonts', () => {
+  return gulp.src(paths.fonts.src)
+    .pipe(gulp.dest(paths.fonts.dest))
+    .pipe(connect.reload())
 })
 gulp.task('build:html', () => {
   return gulp.src(paths.html.src)
@@ -59,7 +67,7 @@ gulp.task('build:html', () => {
 
 gulp.task('build:styles', () => {
   return gulp.src(paths.styles.src)
-    .pipe(sass(sassOptions).on('error', sass.logError))
+    .pipe(sass().on('error', sass.logError))
     .pipe(concat('main.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.styles.dest))
@@ -104,6 +112,10 @@ gulp.task('watch', (cb) => {
 })
 gulp.task('watch:html', (cb) => {
   gulp.watch(paths.html.watch, ['build:html'])
+  cb()
+})
+gulp.task('watch:fonts', (cb) => {
+  gulp.watch(paths.fonts.watch, ['build:fonts'])
   cb()
 })
 gulp.task('watch:styles', (cb) => {
