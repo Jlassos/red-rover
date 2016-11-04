@@ -1,0 +1,20 @@
+@import "../variables";
+
+.rr-avatar {
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  overflow: hidden;
+
+  &.rr-avatar-inline {
+    display: inline-block;
+  }
+  &.rr-avatar-large {
+    height: 6em;
+    width: 6em;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
