@@ -1,0 +1,25 @@
+@import "../variables";
+
+.rr-footer {
+    height: 5em;
+    .rr-footer-button {
+        background-color: #2c3034;
+        text-align: center;
+        overflow: hidden;
+        display: inline-block;
+        border: solid 1px #96989a;
+        width: 5.867em;
+        height: 5em;
+        color: #96989a;
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: #f7253e;
+        }
+        i {
+            font-size: 2em;
+            padding-top: 0.8em;
+        }
+    }
+}
