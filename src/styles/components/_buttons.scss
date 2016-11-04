@@ -19,9 +19,11 @@
   &:hover,
   &:active,
   &:focus {
-    color: rgba(0,0,0,.3);
+    color: rgba(0, 0, 0, .3);
+    cursor: pointer;
   }
 }
+
 // --------------------------------------
 // Button Secondary
 // --------------------------------------
@@ -33,7 +35,7 @@
   text-decoration: none;
   letter-spacing: 1px;
   background: white;
-  color: rgba(44,48,52,.5);
+  color: rgba(44, 48, 52, .5);
   padding: 15px 30px;
   margin: 10px 5px 5px 5px;
   border-radius: 50px;
@@ -43,9 +45,10 @@
   &:active,
   &:focus {
     background: #F7253E;
-    color: rgba(0,0,0,.3);
+    color: rgba(0, 0, 0, .3);
   }
 }
+
 // --------------------------------------
 // Icons formatting
 // --------------------------------------
@@ -56,6 +59,7 @@ ul {
   margin: 0;
   padding: 0;
 }
+
 ul li {
   width: 20%;
   height: 90px;
@@ -63,15 +67,17 @@ ul li {
   display: inline;
   font-family: Raleway, sans-serif;
   font-size: 14px;
-  color: rgba(44,48,52,.5);
+  color: rgba(44, 48, 52, .5);
   text-align: center;
 }
+
 ul li i {
-  color: rgb(44,48,52);
+  color: rgb(44, 48, 52);
   text-align: center;
   font-size: 40px !important;
   margin-bottom: 10px;
 }
+
 // --------------------------------------
 // Social Buttons
 // --------------------------------------
@@ -84,6 +90,7 @@ ul li i {
   height: 2em;
   font-size: 2em;
 }
+
 // --------------------------------------
 // Floating?
 // --------------------------------------
@@ -96,7 +103,6 @@ ul li i {
   height: 2em;
   font-size: 2em;
   text-align: center;
-
   &:hover,
   &:active,
   &:focus {
