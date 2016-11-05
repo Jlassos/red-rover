@@ -5,8 +5,10 @@
 // Colors
 
 $red: #F7253E;
-$gray: #2c3034;
-$gray_light: #96989a;
+$gray_darker: #2c3034;
+$gray_dark: #3f4347;
+$gray: #888c90;
+$gray_light: #b0b2b4;
 $gray_lighter: #d4d5d6;
 
 $body_background: #FFF;
@@ -20,7 +22,7 @@ $font_size_small: 13px;
 
 $base_font_weight: 400;
 $base_line_height: 25px;
-$base_color: $gray;
+$base_color: $gray_dark;
 
 $heading_font_family: $base_font_family;
 $heading_font_weight: 600;

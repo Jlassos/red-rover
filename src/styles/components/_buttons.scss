@@ -1,51 +1,78 @@
 @import "../variables";
+
 // --------------------------------------
-// Button Primary
+// Button
 // --------------------------------------
-.rr-btn-primary {
+.rr.button {
+  padding: $base_padding_vertical $base_padding_horizontal;
   font-family: Raleway, sans-serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 600;
+  color: #FFF;
   text-align: center;
   text-decoration: none;
   letter-spacing: 1px;
-  background: #F7253E;
-  color: white;
-  padding: 15px 30px;
-  margin: 10px 5px 5px 5px;
   border-radius: 50px;
-  border: 3px solid #F7253E;
+  text-transform: uppercase;
+
+  &.primary {
+    background: $red;
+    border: 3px solid $red;
+  }
+
+  &.secondary {
+    background: #FFF;
+    color: $gray;
+    border: 2px solid $red;
+
+    &:hover,
+    &:active,
+    .active,
+    &:focus {
+      background: $red;
+    }
+  }
+
+  &.circular {
+    padding: 0;
+    width: 2em;
+    height: 2em;
+    font-size: 2em;
+    line-height: 2em;
+    color: #FFF;
+    background-color: #2C3034;
+    border: solid 1px $red;
+    border-radius: 999px;
+    text-align: center;
+    cursor: pointer;
+    &:hover,
+    &:active,
+    .active,
+    &:focus {
+      color: #FFF;
+      background-color: $red;
+    }
+  }
+
+  &.social {
+    background: none;
+    padding: 0;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: $gray_light;
+    //background-color: #2c3034;
+    border-radius: 999px;
+    border: solid 2px $gray_light;
+  }
 
   &:hover,
   &:active,
+  .active,
   &:focus {
     color: rgba(0, 0, 0, .3);
     cursor: pointer;
-  }
-}
-
-// --------------------------------------
-// Button Secondary
-// --------------------------------------
-.rr-btn-secondary {
-  font-family: Raleway, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: 1px;
-  background: white;
-  color: rgba(44, 48, 52, .5);
-  padding: 15px 30px;
-  margin: 10px 5px 5px 5px;
-  border-radius: 50px;
-  border: 3px solid #F7253E;
-
-  &:hover,
-  &:active,
-  &:focus {
-    background: #F7253E;
-    color: rgba(0, 0, 0, .3);
   }
 }
 
@@ -76,36 +103,4 @@ ul li i {
   text-align: center;
   font-size: 40px !important;
   margin-bottom: 10px;
-}
-
-// --------------------------------------
-// Social Buttons
-// --------------------------------------
-.rr-button-social {
-  color: #96989a;
-  background-color: #2c3034;
-  border-radius: 999px;
-  border: solid 1px #96989a;
-  width: 2em;
-  height: 2em;
-  font-size: 2em;
-}
-
-// --------------------------------------
-// Floating?
-// --------------------------------------
-.rr-button-other {
-  color: #FFFFFF;
-  background-color: #2c3034;
-  border: solid 1px #f7253e;
-  border-radius: 999px;
-  width: 2em;
-  height: 2em;
-  font-size: 2em;
-  text-align: center;
-  &:hover,
-  &:active,
-  &:focus {
-    background-color: #f7253e;
-  }
 }
