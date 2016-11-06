@@ -27,7 +27,7 @@ body {
 
   .item {
     display: block;
-    padding: 0.5em 1em;
+    padding: 0.35em 1em;
     text-decoration: none;
     color: inherit;
     &:hover {
@@ -38,6 +38,9 @@ body {
     &.sub {
       margin-left: 1em;
       color: $text_gray;
+      & + .item:not(.sub) {
+        padding-top: 0.5em;
+      }
     }
   }
 }
