@@ -1,6 +1,7 @@
 @import "./_variables";
 
 $docs_background: #fff;
+$docs_menu_width: 250px;
 
 html {
   background: $docs_background;
@@ -9,18 +10,57 @@ html {
 body {
   background: $docs_background;
   padding: 0 4em;
+  // magic number, docs menu width
+  padding-left: $docs_menu_width;
+}
+
+.docs-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  // magic number, body left padding
+  width: $docs_menu_width;
+  background: $background_dark;
+  color: $text_light;
+  box-shadow: inset -5px 0 10px transparentize(#000, 0.5);
+
+  .item {
+    display: block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+      color: $text_light;
+      text-decoration: none;
+    }
+
+    &.sub {
+      margin-left: 1em;
+      color: $text_gray;
+    }
+  }
 }
 
 .docs-example {
   padding: 2em 0;
   background: $docs_background;
 
+  .docs-example-title {
+    &:not(:first-child) {
+      padding-top: 2em;
+    }
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 3em;
+    color: $text_dark;
+  }
+
   .docs-example-header {
-    margin: 1em 0 2em 0;
+    padding: 2em 0 1em 0;
     font-size: 1.5em;
     text-align: center;
-    color: darken($docs_background, 50);
-    text-shadow: 0 1px 2px transparentize(#000, 0.85);
+    color: $text_gray;
     text-transform: uppercase;
   }
 
