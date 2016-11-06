@@ -1,22 +1,24 @@
 @import "../_variables";
 
-.rr-inline-link {
-  color: $red;
+.rr.link {
   font-weight: 600;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
   }
-}
 
-.rr-sub-link {
-  color: #96989a;
-  font-weight: 600;
-  text-decoration: none;
+  &.inline {
+    color: $red;
+    &:hover {
+      color: darken($red, 20);
+    }
+  }
 
-  &:hover {
-    color: #111111;
-    text-decoration: underline;
+  &.sub {
+    color: $text_gray;
+    &:hover {
+      color: darken($text_gray, 20);
+    }
   }
 }

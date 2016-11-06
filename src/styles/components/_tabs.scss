@@ -1,9 +1,9 @@
 @import "../_variables";
 
-.rr-tabs {
+.rr.tabs {
   display: flex;
 
-  .rr-tab {
+  .tab {
     flex: 1;
     padding: $base_padding_vertical $base_padding_horizontal;
     text-decoration: none;
