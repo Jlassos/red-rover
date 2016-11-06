@@ -9,7 +9,6 @@ html {
 
 body {
   background: $docs_background;
-  padding: 0 4em;
   // magic number, docs menu width
   padding-left: $docs_menu_width;
 }
@@ -21,26 +20,35 @@ body {
   bottom: 0;
   // magic number, body left padding
   width: $docs_menu_width;
-  background: $background_dark;
-  color: $text_light;
-  box-shadow: inset -5px 0 10px transparentize(#000, 0.5);
+  background: $background_light;
+  color: $text_gray;
+  box-shadow: 5px 0 10px transparentize(#000, 0.9);
+
+  .header {
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    color: mix($red, $text_light);
+    background: $red;
+  }
 
   .item {
     display: block;
     padding: 0.35em 1em;
     text-decoration: none;
     color: inherit;
-    &:hover {
-      color: $text_light;
-      text-decoration: none;
-    }
+    font-weight: bold;
 
     &.sub {
       margin-left: 1em;
-      color: $text_gray;
+      font-weight: normal;
       & + .item:not(.sub) {
         padding-top: 0.5em;
       }
+    }
+
+    &:hover {
+      color: $text_dark;
+      text-decoration: none;
     }
   }
 }
@@ -70,8 +78,8 @@ body {
   .docs-example-content {
     overflow: hidden;
     padding: 2em;
+    margin: 2em auto;
     width: 400px;
-    margin: auto;
     box-shadow: 0 0 30px transparentize(#000, 0.85);
     &.docs-example-dark {
       background: $background_dark;
@@ -80,20 +88,10 @@ body {
 
   pre {
     padding: 1em;
-    padding-top: 2em;
     font-size: 0.825em;
     border: 1px solid #ddd;
     position: relative;
     clear: both;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: 'code';
-      padding: 0.15em 0.5em;
-      background: #eee;
-      color: #bbb;
-    }
   }
 }
 
