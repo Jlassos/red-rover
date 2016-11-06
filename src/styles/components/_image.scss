@@ -1,10 +1,10 @@
-.rr-image {
+.rr.image {
   display: inline-block;
   overflow: hidden;
   vertical-align: top;
   max-width: 100%;
 
-  &.rr-circular {
+  &.circular {
     border-radius: 999px;
   }
 

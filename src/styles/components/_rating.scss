@@ -1,14 +1,14 @@
 @import "../_variables";
 
-.rr-rating {
+.rr.rating {
   display: inline-block;
   color: $gray_light;
   text-align: center;
-  .rr-rating-label {
+  .label {
     text-transform: uppercase;
     font-size: $font_size_small;
   }
-  .rr-rating-star {
+  .star {
     display: inline;
     padding: 0 0.125em;
     &::before {
