@@ -1,0 +1,57 @@
+@import "../_variables";
+
+.rr.accordion {
+  font-weight: $base_font_weight;
+  font-family: $base_font_family;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+
+  .panel {
+    .title {
+      position: relative;
+      padding: 1em;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-top: solid 1px;
+      border-bottom: solid 1px;
+      border-color: $gray_lighter;
+      &::after {
+        font-family: 'Material Icons';
+        // An expand_more icon
+        content: "\e5cf";
+        position: absolute;
+        top: 0;
+        // magic number: match panel right padding 1em (right * font-size)
+        right: 0;
+        bottom: 0;
+        font-size: 2.5em;
+        line-height: 1.2;
+      }
+    }
+
+    .content {
+      display: none;
+      padding: 1em;
+      background: $gray_lightest;
+    }
+
+    &.active {
+      .title {
+        &::after {
+          // An expand_less icon
+          content: "\e5ce";
+        }
+      }
+      .content {
+        display: block;
+      }
+    }
+
+    &:not(.active) + .panel {
+      .title {
+        border-top: none;
+      }
+    }
+  }
+}

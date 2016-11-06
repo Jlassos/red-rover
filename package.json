@@ -38,9 +38,11 @@
     "gulp-concat": "^2.6.0",
     "gulp-htmlmin": "^2.0.0",
     "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.1.0",
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1",
+    "gulp-wrap-iife": "0.0.1",
     "http-server": "^0.9.0",
     "normalize.css": "^4.2.0",
     "run-sequence": "^1.2.1"

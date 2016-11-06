@@ -1,7 +1,8 @@
 // ----------------------------------------
 // Base
-@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "../../node_modules/normalize.css/normalize.css";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "./_variables";
 
@@ -15,6 +16,7 @@ html, body {
 // ----------------------------------------
 // Components
 
+@import "./components/_accordion";
 @import "./components/_avatar";
 @import "./components/_dimmer";
 @import "./components/_buttons";

@@ -4,8 +4,10 @@ const htmlmin = require('gulp-htmlmin')
 const concat = require('gulp-concat')
 const webserver = require('gulp-webserver')
 const cleanCSS = require('gulp-clean-css')
+const plumber = require('gulp-plumber')
 const sass = require('gulp-sass')
 const uglify = require('gulp-uglify')
+const iife = require('gulp-wrap-iife')
 const runSequence = require('run-sequence')
 
 const paths = {
@@ -64,6 +66,7 @@ gulp.task('build:html', () => {
 
 gulp.task('build:styles', () => {
   return gulp.src(paths.styles.src)
+    .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('main.css'))
     .pipe(cleanCSS())
@@ -72,6 +75,8 @@ gulp.task('build:styles', () => {
 
 gulp.task('build:js', (cb) => {
   return gulp.src(paths.js.src)
+    .pipe(plumber())
+    .pipe(iife())
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
@@ -93,7 +98,6 @@ gulp.task('serve', (cb) => {
       host: 'localhost',
       port: 8080,
       livereload: true,
-      open: true,
     }))
 })
 // -------------------------------------

@@ -9,10 +9,13 @@
     font-size: $font_size_small;
   }
   .rr-rating-star {
-    @extend .fa;
-    @extend .fa-star;
     display: inline;
     padding: 0 0.125em;
+    &::before {
+      font-family: 'Material Icons';
+      // A star icon
+      content: '\e838';
+    }
     &.active {
       color: $red;
     }

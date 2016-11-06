@@ -5,11 +5,17 @@
 // Colors
 
 $red: #F7253E;
-$gray_darker: #2c3034;
-$gray_dark: #3f4347;
-$gray: #888c90;
-$gray_light: #b0b2b4;
-$gray_lighter: #d4d5d6;
+
+// grayscale
+$gray: #888;
+
+$gray_dark: mix(#000, $gray, 20);
+$gray_darker: mix(#000, $gray, 60);
+$gray_darkest: mix(#000, $gray, 90);
+
+$gray_light: mix(#fff, $gray, 30);
+$gray_lighter: mix(#fff, $gray, 70);
+$gray_lightest: mix(#fff, $gray, 90);
 
 $body_background: #FFF;
 
