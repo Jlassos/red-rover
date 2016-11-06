@@ -1,4 +1,4 @@
-@import "variables";
+@import "./_variables";
 
 $docs_background: #fff;
 
@@ -25,6 +25,7 @@ body {
   }
 
   .docs-example-content {
+    overflow: auto;
     padding: 2em;
     width: 400px;
     margin: auto;
@@ -49,6 +50,21 @@ body {
       padding: 0.15em 0.5em;
       background: #eee;
       color: #bbb;
+    }
+  }
+}
+
+// Icon Example
+// ----------------------------------------
+.docs-example.docs-example-icons {
+  .docs-example-content {
+    text-align: center;
+    i {
+      float: left;
+      padding: 0.5em;
+      width: 25%;
+      font-size: 2.5em;
+      color: $text_gray;
     }
   }
 }

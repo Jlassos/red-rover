@@ -57,12 +57,15 @@ gulp.task('build', (cb) => {
     cb
   )
 })
+
 gulp.task('build:fonts', () => {
   return gulp.src(paths.fonts.src)
     .pipe(gulp.dest(paths.fonts.dest))
 })
+
 gulp.task('build:html', () => {
   return gulp.src(paths.html.src)
+    .pipe(plumber())
     .pipe(htmlmin({
       collapseWhitespace: true,
       removeComments: true
