@@ -1,15 +1,16 @@
 @import "../variables";
 
-.rr-avatar {
+.rr.avatar {
   height: 4em;
   width: 4em;
   border-radius: 50%;
   overflow: hidden;
 
-  &.rr-avatar-inline {
+  &.inline {
     display: inline-block;
   }
-  &.rr-avatar-large {
+
+  &.large {
     height: 6em;
     width: 6em;
   }
