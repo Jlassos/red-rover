@@ -1,0 +1,28 @@
+@import "../_variables";
+
+.rr.logo {
+  display: block;
+  content: url("/images/rr-logo-red-white.png");
+  width: 250px;
+  max-width: 100%;
+
+  // Sizes
+  // ----------------------------------------
+  &.small {
+    width: 125px;
+  }
+
+  &.large {
+    width: 500px;
+  }
+
+  // Types
+  // ----------------------------------------
+  &.white {
+    content: url("/images/rr-logo-white.png");
+  }
+
+  &.mark {
+    content: url("/images/rr-mark.png");
+  }
+}

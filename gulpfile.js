@@ -11,28 +11,33 @@ const iife = require('gulp-wrap-iife')
 const runSequence = require('run-sequence')
 
 const paths = {
-  server: {
-    root: 'dist',
+  fonts: {
+    src: ['node_modules/font-awesome/fonts/**/*.*'],
+    dest: 'dist/fonts',
+    watch: 'src/fonts/**/*.*',
   },
   html: {
     src: 'src/**/*.html',
     dest: 'dist',
     watch: 'src/**/*.html',
   },
-  styles: {
-    src: 'src/styles/**/*.scss',
-    dest: 'dist/styles',
-    watch: 'src/styles/**/*.scss',
-  },
-  fonts: {
-    src: ['node_modules/font-awesome/fonts/**/*.*'],
-    dest: 'dist/fonts',
-    watch: 'src/fonts/**/*.*',
+  images: {
+    src: 'src/images/**/*',
+    dest: 'dist/images',
+    watch: 'src/images/**/*.*',
   },
   js: {
     src: 'src/js/**/*.js',
     dest: 'dist/js',
     watch: 'src/js/**/*',
+  },
+  server: {
+    root: 'dist',
+  },
+  styles: {
+    src: 'src/styles/**/*.scss',
+    dest: 'dist/styles',
+    watch: 'src/styles/**/*.scss',
   },
 }
 
@@ -43,10 +48,11 @@ gulp.task('build', (cb) => {
   runSequence(
     'clean',
     [
-      'build:html',
       'build:fonts',
-      'build:styles',
+      'build:html',
+      'build:images',
       'build:js',
+      'build:styles',
     ],
     cb
   )
@@ -63,14 +69,9 @@ gulp.task('build:html', () => {
     }))
     .pipe(gulp.dest(paths.html.dest))
 })
-
-gulp.task('build:styles', () => {
-  return gulp.src(paths.styles.src)
-    .pipe(plumber())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(concat('main.css'))
-    .pipe(cleanCSS())
-    .pipe(gulp.dest(paths.styles.dest))
+gulp.task('build:images', () => {
+  return gulp.src(paths.images.src)
+    .pipe(gulp.dest(paths.images.dest))
 })
 
 gulp.task('build:js', (cb) => {
@@ -80,6 +81,15 @@ gulp.task('build:js', (cb) => {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
+})
+
+gulp.task('build:styles', () => {
+  return gulp.src(paths.styles.src)
+    .pipe(plumber())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(concat('main.css'))
+    .pipe(cleanCSS())
+    .pipe(gulp.dest(paths.styles.dest))
 })
 
 // -------------------------------------
@@ -105,26 +115,32 @@ gulp.task('serve', (cb) => {
 // -------------------------------------
 gulp.task('watch', (cb) => {
   runSequence(
+    'watch:fonts',
     'watch:html',
-    'watch:styles',
+    'watch:images',
     'watch:js',
+    'watch:styles',
     cb
   )
-})
-gulp.task('watch:html', (cb) => {
-  gulp.watch(paths.html.watch, ['build:html'])
-  cb()
 })
 gulp.task('watch:fonts', (cb) => {
   gulp.watch(paths.fonts.watch, ['build:fonts'])
   cb()
 })
-gulp.task('watch:styles', (cb) => {
-  gulp.watch(paths.styles.watch, ['build:styles'])
+gulp.task('watch:html', (cb) => {
+  gulp.watch(paths.html.watch, ['build:html'])
+  cb()
+})
+gulp.task('watch:images', (cb) => {
+  gulp.watch(paths.images.watch, ['build:images'])
   cb()
 })
 gulp.task('watch:js', (cb) => {
   gulp.watch(paths.js.watch, ['build:js'])
+  cb()
+})
+gulp.task('watch:styles', (cb) => {
+  gulp.watch(paths.styles.watch, ['build:styles'])
   cb()
 })
 // -------------------------------------

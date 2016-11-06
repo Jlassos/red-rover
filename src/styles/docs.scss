@@ -14,19 +14,24 @@ body {
 .docs-example {
   padding: 2em 0;
   background: $docs_background;
-  //border-top: 2px solid #ddd;
 
   .docs-example-header {
     margin: 1em 0 2em 0;
     font-size: 1.5em;
     text-align: center;
     color: darken($docs_background, 50);
-    text-shadow: 0 1px darken($docs_background, 50);
+    text-shadow: 0 1px 2px transparentize(#000, 0.85);
     text-transform: uppercase;
   }
+
   .docs-example-content {
-    padding: 2em 0;
-    background: $body_background;
+    padding: 2em;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 30px transparentize(#000, 0.85);
+    &.docs-example-dark {
+      background: $background_dark;
+    }
   }
 
   pre {
@@ -35,6 +40,7 @@ body {
     font-size: 0.825em;
     border: 1px solid #ddd;
     position: relative;
+    clear: both;
     &::before {
       position: absolute;
       top: 0;

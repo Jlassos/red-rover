@@ -7,17 +7,24 @@
 $red: #F7253E;
 
 // grayscale
-$gray: #888;
+$gray: scale_color(#888, $green: 7, $blue: 11);
 
-$gray_dark: mix(#000, $gray, 20);
-$gray_darker: mix(#000, $gray, 60);
-$gray_darkest: mix(#000, $gray, 90);
+$gray_dark: darken($gray, 16%);
+$gray_darker: darken($gray, 33%);
+$gray_darkest: darken($gray, 40%);
 
-$gray_light: mix(#fff, $gray, 30);
-$gray_lighter: mix(#fff, $gray, 70);
-$gray_lightest: mix(#fff, $gray, 90);
+$gray_light: lighten($gray, 16%);
+$gray_lighter: lighten($gray, 33%);
+$gray_lightest: lighten($gray, 40%);
 
-$body_background: #FFF;
+// backgrounds
+$background_dark: $gray_darker;
+$background_light: #FFF;
+
+// text colors
+$text_black: $gray_darkest;
+$text_white: #FFF;
+$text_gray: $gray_dark;
 
 // ----------------------------------------
 // Typography
@@ -28,7 +35,6 @@ $font_size_small: 13px;
 
 $base_font_weight: 400;
 $base_line_height: 25px;
-$base_color: $gray_dark;
 
 $heading_font_family: $base_font_family;
 $heading_font_weight: 600;

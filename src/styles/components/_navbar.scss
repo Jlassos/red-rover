@@ -1,0 +1,51 @@
+@import "../_variables";
+
+.rr.navbar {
+  background: $red;
+  position: relative;
+  height: 3em;
+  box-shadow: 0 2px 4px transparentize(#000, 0.8);
+
+  // Logo
+  // ----------------------------------------
+  .logo {
+    content: url("/images/rr-logo-white.png");
+    position: absolute;
+    height: 1.5em;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  // Icons
+  // ----------------------------------------
+  i {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    font-size: 3em;
+    color: $text_white;
+    cursor: pointer;
+  }
+  i:first-child {
+    left: 0;
+  }
+  i:last-child {
+    right: 0;
+  }
+
+  // Variations
+  // ----------------------------------------
+  &.inverted {
+    background: $background_dark;
+    .logo {
+      content: url("/images/rr-logo-red-white.png");
+    }
+    i {
+      color: $text_gray;
+    }
+  }
+}
