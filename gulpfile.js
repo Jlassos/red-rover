@@ -31,6 +31,11 @@ const paths = {
     dest: 'dist/js',
     watch: 'src/js/**/*',
   },
+  root: {
+    src: ['src/favicon.png'],
+    dest: 'dist',
+    watch: ['src/favicon.png'],
+  },
   server: {
     root: 'dist',
   },
@@ -52,6 +57,7 @@ gulp.task('build', (cb) => {
       'build:html',
       'build:images',
       'build:js',
+      'build:root',
       'build:styles',
     ],
     cb
@@ -76,7 +82,6 @@ gulp.task('build:images', () => {
   return gulp.src(paths.images.src)
     .pipe(gulp.dest(paths.images.dest))
 })
-
 gulp.task('build:js', (cb) => {
   return gulp.src(paths.js.src)
     .pipe(plumber())
@@ -84,6 +89,11 @@ gulp.task('build:js', (cb) => {
     .pipe(concat('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
+})
+
+gulp.task('build:root', () => {
+  return gulp.src(paths.root.src)
+    .pipe(gulp.dest(paths.root.dest))
 })
 
 gulp.task('build:styles', () => {
@@ -122,6 +132,7 @@ gulp.task('watch', (cb) => {
     'watch:html',
     'watch:images',
     'watch:js',
+    'watch:root',
     'watch:styles',
     cb
   )
@@ -140,6 +151,10 @@ gulp.task('watch:images', (cb) => {
 })
 gulp.task('watch:js', (cb) => {
   gulp.watch(paths.js.watch, ['build:js'])
+  cb()
+})
+gulp.task('watch:root', (cb) => {
+  gulp.watch(paths.root.watch, ['build:root'])
   cb()
 })
 gulp.task('watch:styles', (cb) => {
