@@ -30,7 +30,6 @@ $(function() {
   // generate menu from anchors
   var docsMenu = document.querySelector('.docs-menu')
   anchors.elements.forEach(function(anchor) {
-    console.log(anchor)
     var menuItem = document.createElement('a')
     if (anchor.className === 'docs-example-title') menuItem.className = 'item'
     if (anchor.className === 'docs-example-header')  menuItem.className = 'sub item'
