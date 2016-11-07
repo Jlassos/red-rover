@@ -87,16 +87,38 @@ body {
   }
 
   pre {
-    padding: 1em;
+    padding: 2em 1em 1em;
     font-size: 0.825em;
     border: 1px solid #ddd;
     position: relative;
     clear: both;
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: 'code';
+      padding: 0.15em 0.5em;
+      background: #eee;
+      color: #bbb;
+    }
+  }
+}
+
+// AnchorJS
+// ----------------------------------------
+
+.anchorjs-link {
+  // prevent anchors from affecting text alignment
+  position: absolute;
+  color: mix($background_light, $red);
+  &:hover {
+    color: $red;
   }
 }
 
 // Icon Example
 // ----------------------------------------
+
 .docs-example.docs-example-icons {
   .docs-example-content {
     text-align: center;
