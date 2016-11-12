@@ -1,6 +1,6 @@
 @import "./_variables";
 
-$docs_background: #fff;
+$docs_background: #FFF;
 $docs_menu_width: 250px;
 
 html {
@@ -18,17 +18,25 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
+  padding-top: 5em;
+  padding-bottom: 4em;
   // magic number, body left padding
   width: $docs_menu_width;
   background: $background_light;
   color: $text_gray;
   box-shadow: 5px 0 10px transparentize(#000, 0.9);
+  overflow: auto;
 
   .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $docs_menu_width;
     padding: 0.5em 1em;
     margin-bottom: 1em;
     color: mix($red, $text_light);
     background: $red;
+    box-shadow: 0 1px 2px transparentize(#000, 0.85);
   }
 
   .item {
@@ -89,7 +97,7 @@ body {
   pre {
     padding: 2em 1em 1em;
     font-size: 0.825em;
-    border: 1px solid #ddd;
+    border: 1px solid #DDD;
     position: relative;
     clear: both;
     &::before {
@@ -98,8 +106,8 @@ body {
       left: 0;
       content: 'code';
       padding: 0.15em 0.5em;
-      background: #eee;
-      color: #bbb;
+      background: #EEE;
+      color: #BBB;
     }
   }
 }

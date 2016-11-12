@@ -11,10 +11,16 @@
   .star {
     display: inline;
     padding: 0 0.125em;
+    font-family: 'Material Icons';
     &::before {
-      font-family: 'Material Icons';
       // A star icon
       content: '\e838';
+    }
+    &.half {
+      &::before {
+        // A half star icon
+        content: '\e839'
+      }
     }
     &.active {
       color: $red;
