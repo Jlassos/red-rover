@@ -14,7 +14,7 @@
   letter-spacing: 1px;
   border-radius: 50px;
   text-transform: uppercase;
-
+  cursor: pointer;
   &.primary {
     background: $red;
     border: 3px solid $red;
@@ -24,13 +24,6 @@
     background: #FFF;
     color: $gray;
     border: 2px solid $red;
-
-    &:hover,
-    &:active,
-    .active,
-    &:focus {
-      background: $red;
-    }
   }
 
   &.circular {
@@ -44,13 +37,11 @@
     border: solid 2px $red;
     border-radius: 999px;
     text-align: center;
-    cursor: pointer;
     &:hover,
     &:active,
     .active,
     &:focus {
       color: #FFF;
-      background-color: $red;
     }
   }
 
@@ -62,17 +53,23 @@
     font-size: 2em;
     line-height: 1.5em;
     color: $gray_light;
-    //background-color: #2c3034;
     border-radius: 999px;
     border: solid 2px $gray_light;
+    &:hover,
+    &:active,
+    .active,
+    &:focus {
+      background: none;
+      color: $gray;
+    }
   }
 
   &:hover,
   &:active,
   .active,
   &:focus {
+    background-color: $red;
     color: rgba(0, 0, 0, .3);
-    cursor: pointer;
   }
 }
 

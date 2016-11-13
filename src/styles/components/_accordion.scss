@@ -5,7 +5,6 @@
   font-family: $base_font_family;
   background-color: white;
   color: black;
-  cursor: pointer;
 
   .panel {
     .title {
@@ -16,6 +15,8 @@
       border-top: solid 1px;
       border-bottom: solid 1px;
       border-color: $gray_lighter;
+      user-select: none;
+      cursor: pointer;
       &::after {
         font-family: 'Material Icons';
         // An expand_more icon
