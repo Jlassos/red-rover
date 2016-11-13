@@ -1,0 +1,23 @@
+@import "../_variables";
+
+.rr.list {
+  .item {
+    position: relative;
+    color: $red;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1em;
+    border-bottom: solid 1px $gray_lighter;
+    &::after {
+      font-family: "Material Icons";
+      color: $gray_lighter;
+      content: '\e315';
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      line-height: 1.2;
+      font-size: 2.5em;
+    }
+  }
+}
