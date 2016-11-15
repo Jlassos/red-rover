@@ -40,7 +40,7 @@ const paths = {
     root: 'dist',
   },
   styles: {
-    src: 'src/styles/**/*.scss',
+    src: ['src/styles/main.scss', 'src/styles/docs.scss'],
     dest: 'dist/styles',
     watch: 'src/styles/**/*.scss',
   },
@@ -100,7 +100,6 @@ gulp.task('build:styles', () => {
   return gulp.src(paths.styles.src)
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
-    .pipe(concat('main.css'))
     .pipe(cleanCSS())
     .pipe(gulp.dest(paths.styles.dest))
 })
