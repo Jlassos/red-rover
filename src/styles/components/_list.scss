@@ -8,6 +8,16 @@
     font-weight: bold;
     padding: 1em;
     border-bottom: solid 1px $gray_lighter;
+    .image {
+      display: inline;
+      img {
+        border-radius: 999px;
+      }
+    }
+    .content {
+      display: inline;
+      padding: 1em;
+    }
     &::after {
       font-family: "Material Icons";
       color: $gray_lighter;
