@@ -10,7 +10,7 @@ $(function() {
 
   // add code snippet
   examples.forEach(function(example) {
-    var contents = example.querySelectorAll('.docs-example-content')
+    var contents = example.querySelectorAll('.docs-example-content:not(.no-code)')
 
     contents.forEach(function(content) {
       var pre = document.createElement('pre')
