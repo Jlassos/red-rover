@@ -72,32 +72,3 @@
     color: rgba(0, 0, 0, .3);
   }
 }
-
-// --------------------------------------
-// Icons formatting
-// --------------------------------------
-ul {
-  float: left;
-  background-color: white;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-ul li {
-  width: 20%;
-  height: 90px;
-  float: left;
-  display: inline;
-  font-family: Raleway, sans-serif;
-  font-size: 14px;
-  color: rgba(44, 48, 52, .5);
-  text-align: center;
-}
-
-ul li i {
-  color: rgb(44, 48, 52);
-  text-align: center;
-  font-size: 40px !important;
-  margin-bottom: 10px;
-}
