@@ -1,16 +1,14 @@
 @import "./_variables";
 
 $docs_background: #FFF;
-$docs_menu_width: 250px;
+$docs_menu_width: 17rem;
 
-html {
+html, body {
   background: $docs_background;
 }
 
 body {
-  background: $docs_background;
-  // magic number, docs menu width
-  padding-left: $docs_menu_width;
+  padding: 1em 1em 1em $docs_menu_width + 1rem;
 }
 
 .docs-menu {
