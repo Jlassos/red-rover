@@ -31,6 +31,7 @@
   "homepage": "https://github.com/Jlassos/red-rover#readme",
   "dependencies": {
     "del": "^2.2.0",
+    "flexboxgrid": "^6.3.1",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",

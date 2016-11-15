@@ -87,7 +87,7 @@ body {
     overflow: hidden;
     margin: 2em auto;
     width: 400px;
-    box-shadow: 0 0 30px transparentize(#000, 0.85);
+    padding: 1em;
     &.docs-example-dark {
       background: $background_dark;
     }
