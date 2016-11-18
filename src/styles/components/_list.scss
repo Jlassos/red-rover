@@ -3,11 +3,28 @@
 .rr.list {
   .item {
     position: relative;
+    display: flex;
     color: $red;
     text-transform: uppercase;
     font-weight: bold;
     padding: 1em;
     border-bottom: solid 1px $gray_lighter;
+    .image {
+      flex: none;
+      align-self: center;
+      width: 2.5em;
+      margin-right: 1em;
+      img {
+        border-radius: 999px;
+        height: 2.5em;
+        width: 2.5em;
+      }
+    }
+    .content {
+      flex: 1;
+      align-self: center;
+      padding: 1em;
+    }
     &::after {
       font-family: "Material Icons";
       color: $gray_lighter;
@@ -16,8 +33,10 @@
       right: 0;
       top: 0;
       bottom: 0;
-      line-height: 1.2;
+      line-height: 1;
       font-size: 2.5em;
+      margin: auto;
+      height: 1em;
     }
   }
 }
