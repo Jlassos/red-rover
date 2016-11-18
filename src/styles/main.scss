@@ -3,7 +3,13 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// Flexboxgrid
 @import "../../node_modules/flexboxgrid/dist/flexboxgrid.css";
+.container {
+  padding: 0 1em;
+}
+
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "./_variables";
 @import "./_global";

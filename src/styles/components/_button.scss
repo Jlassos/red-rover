@@ -21,8 +21,8 @@
   }
 
   &.secondary {
-    background: #FFF;
-    color: $gray;
+    background: none;
+    color: #fff;
     border: 2px solid $red;
   }
 
@@ -62,13 +62,5 @@
       background: none;
       color: $gray;
     }
-  }
-
-  &:hover,
-  &:active,
-  .active,
-  &:focus {
-    background-color: $red;
-    color: rgba(0, 0, 0, .3);
   }
 }
