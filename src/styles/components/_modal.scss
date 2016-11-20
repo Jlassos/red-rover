@@ -1,20 +1,26 @@
 @import "../_variables.scss";
 
 .rr.modal {
-  background: rgba(0, 0, 0, 0.85);
-  display: inline-block;
+  display: block;
   background-color: white;
   text-align: center;
-  border: solid 1px black;
   height: 100%;
-  width: 70%;
-  opacity: 1;
+  max-width: 20em;
+  margin: auto;
+  z-index: 1;
+  .header {
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: $red;
+    font-weight: bold;
+  }
   .icon {
     border-radius: 999px;
     color: white;
     background-color: $red;
     padding: 0.5em;
-    font-size: 2.5em;
+    margin: 0.25em;
+    font-size: 2.75em;
   }
   .content {
     padding: 1em;
