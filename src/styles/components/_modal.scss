@@ -1,6 +1,52 @@
-.rr.modal{
-  background: rgba(0, 0, 0, 0.85);
-  color: #fff;
-  padding: 2em;
-  opacity: 0.75;
+@import "../_variables.scss";
+
+.rr.modal {
+  display: block;
+  background-color: white;
+  text-align: center;
+  height: 100%;
+  max-width: 20em;
+  margin: auto;
+  z-index: 1;
+  .header {
+    margin: 1em 0;
+    text-transform: uppercase;
+    color: $red;
+    font-weight: bold;
+  }
+  .icon {
+    border-radius: 999px;
+    color: white;
+    background-color: $red;
+    padding: 0.5em;
+    margin: 0.25em;
+    font-size: 2.75em;
+  }
+  .content {
+    padding: 1em;
+  }
+  .actions {
+    display: flex;
+    .button {
+      flex: 1;
+      cursor: pointer;
+      color: $gray_light;
+      background-color: white;
+      border: none;
+      border-top: solid 1px $gray_lighter;
+      font-size: 0.80em;
+      font-weight: bold;
+      padding: 1.5em;
+      width: 50%;
+      float: left;
+      text-transform: uppercase;
+      & + .button {
+        border-left: 1px solid $gray_lighter;
+      }
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
 }
