@@ -1,12 +1,16 @@
 @import "../_variables.scss";
 
 .rr.modal {
+  position: absolute;
   display: block;
-  background-color: white;
-  text-align: center;
-  height: 100%;
-  max-width: 20em;
+  top: 10%;
+  left: 0;
+  right: 0;
   margin: auto;
+  max-width: 20em;
+  text-align: center;
+  color: $text_dark;
+  background-color: white;
   z-index: 1;
   .header {
     margin: 1em 0;
@@ -14,7 +18,7 @@
     color: $red;
     font-weight: bold;
   }
-  .icon {
+  i {
     border-radius: 999px;
     color: white;
     background-color: $red;
