@@ -1,6 +1,26 @@
+@import "../_variables.scss";
+
 .rr.modal{
   background: rgba(0, 0, 0, 0.85);
   color: #fff;
-  padding: 2em;
+  padding: 2em 2em 0em 2em;
   opacity: 0.75;
+  &.confirmation {
+    background-color: white;
+    color: $gray_light;
+    text-align: center;
+    border: solid 1px black;
+    height: 100%;
+    width: 70%;
+    opacity: 1;
+    img {
+      padding-bottom: 2em;
+    }
+    button {
+      background-color: white;
+      display: inline-block;
+      border: solid 1px $gray_lighter;
+      height: 2em;
+    }
+  }
 }
