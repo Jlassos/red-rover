@@ -1,11 +1,12 @@
 @import "./_variables";
 
 html, body {
+  margin: 0;
   font-family: $base_font_family;
   font-weight: $base_font_weight;
   font-size: $base_font_size;
-  background: $background_light;
-  color: $text_dark;
+  background: $background_dark;
+  color: $text_light;
   line-height: 1.4;
 }
 
