@@ -4,7 +4,6 @@
   background: rgba(0, 0, 0, 0.85);
   display: inline-block;
   background-color: white;
-  color: $gray_light;
   text-align: center;
   border: solid 1px black;
   height: 100%;
@@ -24,11 +23,23 @@
     display: flex;
     .button {
       flex: 1;
+      cursor: pointer;
+      color: $gray_light;
       background-color: white;
-      border: solid 1px $gray_lighter;
-      height: 2em;
+      border: none;
+      border-top: solid 1px $gray_lighter;
+      font-size: 0.80em;
+      font-weight: bold;
+      padding: 1.5em;
       width: 50%;
       float: left;
+      text-transform: uppercase;
+      & + .button {
+        border-left: 1px solid $gray_lighter;
+      }
+      &:hover {
+        color: $gray;
+      }
     }
   }
 
