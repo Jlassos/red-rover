@@ -2,20 +2,28 @@
 
 .rr.list {
   background: $background_light;
+  margin: 0;
+  padding: 0;
+
   .item {
-    position: relative;
     display: flex;
+    position: relative;
+    padding: $base_padding;
     color: $text_dark;
     text-transform: uppercase;
     font-weight: bold;
-    padding: $base_padding;
     border-bottom: solid 1px $gray_lighter;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
     .image {
       flex: none;
       align-self: center;
       width: 2.5em;
       margin-right: 1em;
       img {
+        display: block;
         border-radius: 999px;
         height: 2.5em;
         width: 2.5em;
@@ -25,24 +33,41 @@
       flex: 1;
       align-self: center;
       padding: $base_padding;
-    }
-    &::after {
-      font-family: "Material Icons";
-      color: $gray_lighter;
-      content: '\e315';
-      position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      line-height: 1;
-      font-size: 2.5em;
-      margin: auto;
-      height: 1em;
+      .header {
+      }
+      .description {
+        font-weight: normal;
+        font-size: $font_size_small;
+        text-transform: none;
+      }
     }
   }
+
   &.red {
     .item {
       color: $red;
+    }
+  }
+
+  &.action {
+    .item {
+      cursor: pointer;
+      &::after {
+        font-family: "Material Icons";
+        color: $gray_lighter;
+        content: '\e315';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        line-height: 1;
+        font-size: 2.5em;
+        margin: auto;
+        height: 1em;
+      }
+      &:hover {
+        background: $gray_lightest;
+      }
     }
   }
 }
