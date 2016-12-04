@@ -1,0 +1,17 @@
+@import "../_variables";
+
+.rr.location {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  color: $text_dark;
+
+  &::before {
+    font-family: "Material Icons";
+    margin-right: 0.2em;
+    font-size: 1.4em;
+    color: $gray_lighter;
+    content: "\e55f";
+    vertical-align: middle;
+  }
+}
