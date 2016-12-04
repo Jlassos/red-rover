@@ -2,23 +2,17 @@
 
 .rr.link {
   font-weight: 600;
+  color: $red;
   text-decoration: none;
-
+  text-transform: uppercase;
   &:hover {
-    text-decoration: underline;
+    color: darken($red, 10);
+    text-decoration: none;
   }
-
-  &.inline {
-    color: $red;
+  &.secondary {
+    color: $gray_light;
     &:hover {
-      color: darken($red, 20);
-    }
-  }
-
-  &.sub {
-    color: $text_gray;
-    &:hover {
-      color: darken($text_gray, 20);
+      color: darken($gray_light, 10);
     }
   }
 }
