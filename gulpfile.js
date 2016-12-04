@@ -17,7 +17,7 @@ const paths = {
     watch: 'src/fonts/**/*.*',
   },
   html: {
-    src: 'src/**/*.html',
+    src: ['src/**/*.html', 'src/pages/**/*.html'],
     dest: 'dist',
     watch: 'src/**/*.html',
   },
