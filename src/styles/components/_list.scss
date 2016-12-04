@@ -5,10 +5,10 @@
   .item {
     position: relative;
     display: flex;
-    color: $red;
+    color: $text_dark;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 1em;
+    padding: $base_padding;
     border-bottom: solid 1px $gray_lighter;
     .image {
       flex: none;
@@ -24,7 +24,7 @@
     .content {
       flex: 1;
       align-self: center;
-      padding: 1em;
+      padding: $base_padding;
     }
     &::after {
       font-family: "Material Icons";
@@ -38,6 +38,11 @@
       font-size: 2.5em;
       margin: auto;
       height: 1em;
+    }
+  }
+  &.red {
+    .item {
+      color: $red;
     }
   }
 }

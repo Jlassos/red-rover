@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5em 1em;
+    padding: ($base_padding * 0.5) $base_padding;
     color: $text_gray;
     background-color: $background_dark;
     cursor: pointer;

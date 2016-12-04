@@ -9,7 +9,7 @@
   .panel {
     .title {
       position: relative;
-      padding: 1em;
+      padding: $base_padding;
       font-weight: 600;
       text-transform: uppercase;
       border-top: solid 1px;
@@ -33,7 +33,7 @@
 
     .content {
       display: none;
-      padding: 1em;
+      padding: $base_padding;
       background: $gray_lightest;
     }
 

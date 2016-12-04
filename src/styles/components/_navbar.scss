@@ -1,10 +1,11 @@
 @import "../_variables";
 
 .rr.navbar {
-  background: $red;
   position: relative;
   height: 3em;
+  background: $red;
   box-shadow: 0 2px 4px transparentize(#000, 0.8);
+  z-index: $zindex_navbar;
 
   // Logo
   // ----------------------------------------
