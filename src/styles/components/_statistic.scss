@@ -1,0 +1,16 @@
+@import "../_variables.scss";
+
+.rr.statistic {
+  font-size: small;
+  text-align: center;
+  text-transform: uppercase;
+
+  .value {
+    color: #000;
+    font-weight: bold;
+  }
+
+  .label {
+    color: $gray;
+  }
+}
