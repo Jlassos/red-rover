@@ -4,6 +4,7 @@
 // Button
 // --------------------------------------
 .rr.button {
+  display: inline-block;
   padding: $base_padding_vertical $base_padding_horizontal;
   font-family: Raleway, sans-serif;
   font-size: 1em;
@@ -15,6 +16,9 @@
   border-radius: 50px;
   text-transform: uppercase;
   cursor: pointer;
+  &.fluid {
+    width: 100%;
+  }
   &.primary {
     background: $red;
     border: 3px solid $red;
@@ -52,9 +56,9 @@
     height: 1.5em;
     font-size: 2em;
     line-height: 1.5em;
-    color: $gray_light;
+    color: $gray;
     border-radius: 999px;
-    border: solid 2px $gray_light;
+    border: solid 2px $gray;
     &:hover,
     &:active,
     .active,
