@@ -9,7 +9,7 @@
     flex-direction: column;
     align-items: center;
     padding: ($base_padding * 0.5) $base_padding;
-    color: $text_gray;
+    color: $gray_dark;
     background-color: $background_dark;
     cursor: pointer;
     text-decoration: none;
@@ -26,7 +26,7 @@
     }
 
     & + .tab {
-      border-left: solid 1px $text_gray;
+      border-left: solid 1px $gray_dark;
     }
   }
 }

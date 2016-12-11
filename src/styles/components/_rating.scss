@@ -4,22 +4,23 @@
   display: inline-block;
   color: $gray_light;
   text-align: center;
+  line-height: 1;
+  font-size: 1em;
   .label {
     text-transform: uppercase;
-    font-size: $font_size_small;
+    font-size: $font_size_extra_small;
   }
   .star {
     display: inline;
     padding: 0 0.125em;
+    vertical-align: middle;
     font-family: 'Material Icons';
     &::before {
-      // A star icon
-      content: '\e838';
+      content: '\e838'; // A star icon
     }
     &.half {
       &::before {
-        // A half star icon
-        content: '\e839'
+        content: '\e839'; // A half star icon
       }
     }
     &.active {

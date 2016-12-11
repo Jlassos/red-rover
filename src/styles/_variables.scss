@@ -1,6 +1,11 @@
 // ========================================================
 // Base
 
+// The master size knob.
+// All components use `em` based
+
+$base_font_size: 15px;
+
 // ----------------------------------------
 // Colors
 
@@ -24,14 +29,14 @@ $background_light: #FFF;
 // text colors
 $text_dark: $gray_darkest;
 $text_light: #FFF;
-$text_gray: $gray_dark;
 
 // ----------------------------------------
 // Typography
 
 $base_font_family: Raleway, sans-serif;
-$base_font_size: 15px;
-$font_size_small: 13px;
+$font_size_small: 0.9rem;
+$font_size_large: 1.2rem;
+$font_size_extra_small: 0.8rem;
 
 $base_font_weight: 300;
 $base_line_height: 25px;

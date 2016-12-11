@@ -21,7 +21,7 @@ body {
   // magic number, body left padding
   width: $docs_menu_width;
   background: $background_light;
-  color: $text_gray;
+  color: $gray_dark;
   box-shadow: 5px 0 10px transparentize(#000, 0.9);
   overflow: auto;
 
@@ -84,7 +84,7 @@ body {
     padding: 2em 0 1em 0;
     font-size: 1.5em;
     text-align: center;
-    color: $text_gray;
+    color: $gray_dark;
     text-transform: uppercase;
   }
 
@@ -105,6 +105,8 @@ body {
     border: 1px solid #EEE;
     position: relative;
     clear: both;
+    line-height: 1;
+    letter-spacing: 0;
     &::before {
       position: absolute;
       top: 0;
@@ -140,7 +142,7 @@ body {
       padding: 0.5em;
       width: 25%;
       font-size: 2.5em;
-      color: $text_gray;
+      color: $gray_dark;
     }
   }
 }

@@ -1,0 +1,41 @@
+.rr.media {
+  display: flex;
+  padding: 1em 0;
+  .image {
+    flex: 0 0 auto;
+    width: 3.5em;
+    height: 3.5em;
+    overflow: hidden;
+    border-radius: 9999em;
+    margin-right: $base_padding;
+    img {
+      display: block;
+      vertical-align: middle;
+      max-width: 100%;
+    }
+  }
+
+  .content {
+    position: relative;
+    flex: 1;
+    align-self: center;
+    .header {
+      font-size: $font_size_large;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .description {
+      margin-top: 0.2em;
+      font-size: $font_size_small;
+    }
+    .extra {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: $font_size_extra_small;
+      text-transform: uppercase;
+      color: $gray_light;
+    }
+  }
+}
+
