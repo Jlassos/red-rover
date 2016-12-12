@@ -41,6 +41,12 @@ $font_size_small: 0.9rem;
 $font_size_large: 1.2rem;
 $font_size_extra_small: 0.8rem;
 
+$base_icon_size: 2em;
+$icon_size_extra_small: $base_icon_size * 0.5;
+$icon_size_small: $base_icon_size * 0.75;
+$icon_size_large: $base_icon_size * 1.5;
+$icon_size_extra_large: $base_icon_size * 2;
+
 $base_line_height: 1.7;
 $line_height_small: 1.4;
 
@@ -66,8 +72,8 @@ $base_border: 1px solid black;
 
 // ----------------------------------------
 // Shadows
-$box_shadow: 0 0.07em 0.15em transparentize(#000, 0.75);       // 0 1px 2px
-$box_shadow_large: 0 0.15em 0.25em transparentize(#000, 0.75); // 0 2px 4px
+$box_shadow: 0 0.1em 0.2em transparentize(#000, 0.8);
+$box_shadow_large: 0 0.2em 0.4em transparentize(#000, 0.8);
 
 // ----------------------------------------
 // Z-Index

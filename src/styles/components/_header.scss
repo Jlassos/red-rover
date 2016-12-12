@@ -4,7 +4,7 @@
   font-family: $base_font_family;
   &.page {
     position: relative;
-    box-shadow: 0 1px 3px transparentize(#000, 0.8);
+    box-shadow: $box_shadow;
     background-color: white;
     text-transform: uppercase;
     color: $gray;

@@ -2,48 +2,62 @@
 
 .material-icons {
   vertical-align: middle; // align with text
-  font-size: $base_font_size * 2;
+  font-size: $base_icon_size;
+
+  // ----------------------------------------
+  // Shapes
+
+  &.circular {
+    border-radius: $border_radius_circular;
+    border: 0.1em solid $text_dark;
+  }
 
   // ----------------------------------------
   // Colors
 
+  &.inverted {
+    color: $text_light;
+    background: $background_dark;
+    &.circular {
+      border-color: $background_dark;
+    }
+  }
+
   &.red {
     color: $red;
     &.inverted {
+      color: $text_light;
       background: $red;
+    }
+    &.circular {
+      border-color: $red;
     }
   }
 
   &.gray {
     color: $gray_lighter;
     &.inverted {
+      color: $text_light;
       background: $gray_lighter;
     }
-  }
-
-  &.inverted {
-    color: $text_light;
-    background: $background_dark;
+    &.circular {
+      border-color: $gray_lighter;
+    }
   }
 
   // ----------------------------------------
   // Sizes
 
   &.extra.small {
-    font-size: $font_size_extra_small;
+    font-size: $icon_size_extra_small;
   }
   &.small {
-    font-size: $font_size_small;
+    font-size: $icon_size_small;
   }
   &.large {
-    font-size: $font_size_large;
+    font-size: $icon_size_large;
   }
-
-  // ----------------------------------------
-  // Shapes
-  &.circular {
-    border-radius: $border_radius_circular;
-    padding: $base_font_size * 0.2;
-    font-size: $base_font_size * 1.6;
+  &.extra.large {
+    font-size: $icon_size_extra_large;
   }
 }

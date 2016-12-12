@@ -37,84 +37,35 @@
   <h2>CSS</h2>
   <!-- This menu is auto populated with example titles/headers -->
 </div>
-<div class="docs example">
-  <div class="title">Helpers</div>
-  <div class="header">Text Alignment</div>
-  <div class="content">
-    <div class="left aligned">
-      I am left aligned.
-    </div>
-    <div class="right aligned">
-      I am right aligned.
-    </div>
-  </div>
-
-  <div class="header">Floats</div>
-  <div class="content">
-    <div class="floated left">
-      I am floated left.
-    </div>
-    <div class="floated right">
-      I am floated right.
-    </div>
-  </div>
-</div>
 
 <div class="docs example">
-  <div class="title">Logo</div>
-  <div class="header">Colors</div>
-  <div class="content dark">
-    <img class="rr logo">
-    <img class="rr white logo">
-  </div>
-  <div class="header">Sizes</div>
-  <div class="content dark">
-    <img class="rr small logo">
-    <img class="rr logo">
-    <img class="rr large logo">
-  </div>
-  <div class="header">Mark</div>
-  <div class="content dark">
-    <img class="rr mark logo">
-  </div>
-</div>
-
-<div class="docs example">
-  <div class="title">Navbar</div>
-
-  <div class="header">Normal</div>
+  <div class="title">Accordion</div>
   <div class="content">
-    <div class="rr navbar">
-      <img class="rr small white logo">
-    </div>
-    <br>
-    <div class="rr navbar">
-      <i class="material-icons">keyboard_arrow_left</i>
-      <img class="rr small white logo">
-      <i class="material-icons">add</i>
-    </div>
-    <br>
-    <div class="rr navbar">
-      <i class="material-icons">keyboard_arrow_left</i>
-      <img class="rr small white logo">
-      <i class="material-icons">check</i>
-    </div>
-  </div>
-  <div class="header">Inverted</div>
-  <div class="content">
-    <div class="rr inverted navbar">
-      <img class="rr small logo">
-    </div>
-    <br>
-    <div class="rr inverted navbar">
-      <img class="rr small logo">
-      <i class="material-icons">close</i>
-    </div>
-    <br>
-    <div class="rr inverted navbar">
-      <i class="material-icons">keyboard_arrow_left</i>
-      <img class="rr small logo">
-      <i class="material-icons">menu</i>
+    <div class="rr accordion">
+      <div class="panel active">
+        <div class="title">
+          Private Information
+        </div>
+        <div class="content active">
+          The content area is visible when the panel is active.
+        </div>
+      </div>
+      <div class="panel">
+        <div class="title">
+          Public Information
+        </div>
+        <div class="content">
+          The icon automatically changes to "expand_less" when active.
+        </div>
+      </div>
+      <div class="panel">
+        <div class="title">
+          Information
+        </div>
+        <div class="content">
+          The panel is made active on click.
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -187,7 +138,7 @@
         <div class="col-xs-8">
           <div class="rr media">
             <div class="image">
-              <img src="//unsplash.it/100">
+              <img src="//unsplash.it/100?random">
             </div>
             <div class="content">
               <div class="header">Company Name</div>
@@ -272,12 +223,280 @@
 </div>
 
 <div class="docs example">
+  <div class="title">Grid</div>
+  <div class="description">
+    <p>
+      RedRover CSS uses the wonderful <strong href="http://flexboxgrid.com">Flexbox Grid</strong>.
+    </p>
+    <ul>
+      <li>
+        <a target="_blank" href="http://flexboxgrid.com/">Flexbox Grid Docs</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://github.com/kristoferjoseph/flexboxgrid">Github Project</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Headers</div>
+  <div class="header">Page</div>
+  <div class="content">
+    <h5 class="rr page header">Page Header</h5>
+  </div>
+  <div class="header">Primary</div>
+  <div class="content dark">
+    <h2 class="rr primary header">Primary Header</h2>
+  </div>
+  <div class="header">Secondary Header</div>
+  <div class="content">
+    <h2 class="rr secondary header">Secondary Header</h2>
+  </div>
+  <div class="header">Uppercase</div>
+  <div class="content dark">
+    <h2 class="rr primary uppercase header">Primary Uppercase Header</h2>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Icons</div>
+
+  <div class="header">Sizes</div>
+  <div class="content">
+    <i class="material-icons extra small">person</i>
+    <i class="material-icons small">person</i>
+    <i class="material-icons">person</i>
+    <i class="material-icons large">person</i>
+  </div>
+
+  <div class="header">Colors</div>
+  <div class="content">
+    <i class="material-icons">person</i>
+    <i class="red material-icons">person</i>
+    <i class="gray material-icons">person</i>
+  </div>
+
+  <div class="header">Inverted</div>
+  <div class="content">
+    <i class="inverted material-icons">person</i>
+    <i class="inverted red material-icons">person</i>
+    <i class="inverted gray material-icons">person</i>
+  </div>
+
+  <div class="header">Circular</div>
+  <div class="content">
+    <i class="circular material-icons">person</i>
+    <i class="circular red material-icons">person</i>
+    <i class="circular gray material-icons">person</i>
+  </div>
+
+  <div class="header">Inverted Circular</div>
+  <div class="content">
+    <i class="circular inverted material-icons">person</i>
+    <i class="circular red inverted material-icons">person</i>
+    <i class="circular gray inverted material-icons">person</i>
+  </div>
+
+  <div class="header">Icon Set</div>
+  <div class="description">
+    All <a href="https://material.io/icons" target="_blank">material icons</a> are supported.
+    Here are some samples:
+  </div>
+  <div class="content">
+    <i class="material-icons">style</i>
+    <i class="material-icons">compare_arrows</i>
+    <i class="material-icons">dashboard</i>
+    <i class="material-icons">message</i>
+    <i class="material-icons">person</i>
+    <i class="material-icons">settings</i>
+    <i class="material-icons">check</i>
+    <i class="material-icons">history</i>
+    <i class="material-icons">edit</i>
+    <i class="material-icons">keyboard_arrow_left</i>
+    <i class="material-icons">keyboard_arrow_right</i>
+    <i class="material-icons">keyboard_arrow_down</i>
+    <i class="material-icons">keyboard_arrow_up</i>
+    <i class="material-icons">add_a_photo</i>
+    <i class="material-icons">place</i>
+    <i class="material-icons">public</i>
+    <i class="material-icons">email</i>
+    <i class="material-icons">lock</i>
+    <i class="material-icons">find_replace</i>
+    <i class="material-icons">send</i>
+    <i class="material-icons">priority_high</i>
+    <i class="material-icons">format_size</i>
+    <i class="material-icons">developer_mode</i>
+    <i class="material-icons">gavel</i>
+    <i class="material-icons">work</i>
+    <i class="material-icons">photo</i>
+    <i class="material-icons">rate_review</i>
+    <i class="material-icons">more_horiz</i>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Image</div>
+  <div class="header">Standard</div>
+  <div class="content">
+    <div class="rr image">
+      <img src="//unsplash.it/500?random">
+    </div>
+  </div>
+
+  <div class="header">Avatar</div>
+  <div class="content">
+    <h3>Regular</h3>
+    <div class="rr avatar image">
+      <img src="//unsplash.it/180?random">
+    </div>
+    <h3>Inline</h3>
+    <div class="rr avatar inline image">
+      <img src="//unsplash.it/180?random">
+    </div>
+    <div class="rr avatar inline image">
+      <img src="//unsplash.it/180?random">
+    </div>
+    <div class="rr avatar inline image">
+      <img src="//unsplash.it/180?random">
+    </div>
+    <h3>Large</h3>
+    <div class="rr avatar large image">
+      <img src="//unsplash.it/180?random">
+    </div>
+  </div>
+
+  <div class="header">Circular</div>
+  <div class="content">
+    <div class="rr circular image">
+      <img src="//unsplash.it/500?random">
+    </div>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Links</div>
+  <div class="content">
+    <a href="#links" class="rr secondary link">See Profile</a>
+    <a href="#links" class="rr link">Send Message</a>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">List</div>
+  <div class="header">Red & Action</div>
+  <div class="content">
+    <div class="rr red action list">
+      <div class="item">Create an account</div>
+      <div class="item">Sign in</div>
+      <div class="item">How it works</div>
+      <div class="item">The blog</div>
+      <div class="item">Contact us</div>
+    </div>
+  </div>
+  <div class="header">Image & Action</div>
+  <div class="content">
+    <div class="rr action list">
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">Business Name</div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">Business Name</div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">Community Name</div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">Community Name</div>
+      </div>
+    </div>
+  </div>
+  <div class="header">Image, Header & Description</div>
+  <div class="content">
+    <div class="rr list">
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">
+          <div class="header">Company Name</div>
+          <div class="description">
+            Adipisci aut deleniti dolor et, itaque iure libero.
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">
+          <div class="header">Company Name</div>
+          <div class="description">
+            Amet consequatur deserunt iusto laborum molestias necessitatibus non.
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="image">
+          <img src="//unsplash.it/100?random">
+        </div>
+        <div class="content">
+          <div class="header">Company Name</div>
+          <div class="description">
+            Eos fugiat harum illum in minima neque quibusdam repudiandae.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Location</div>
+  <div class="content">
+    <div class="rr location">Spokane, WA</div>
+    <div class="rr location">Seatle, WA</div>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Logo</div>
+  <div class="header">Colors</div>
+  <div class="content dark">
+    <img class="rr logo">
+    <img class="rr white logo">
+  </div>
+  <div class="header">Sizes</div>
+  <div class="content dark">
+    <img class="rr small logo">
+    <img class="rr logo">
+    <img class="rr large logo">
+  </div>
+  <div class="header">Mark</div>
+  <div class="content dark">
+    <img class="rr mark logo">
+  </div>
+</div>
+
+<div class="docs example">
   <div class="title">Media</div>
   <div class="header">Image & Header</div>
   <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//unsplash.it/100">
+        <img src="//unsplash.it/100?random">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -288,7 +507,7 @@
   <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//unsplash.it/100">
+        <img src="//unsplash.it/100?random">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -303,7 +522,7 @@
   <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//unsplash.it/100">
+        <img src="//unsplash.it/100?random">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -325,7 +544,7 @@
     </div>
     <div class="rr media">
       <div class="image">
-        <img src="//unsplash.it/100">
+        <img src="//unsplash.it/100?random">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -360,144 +579,42 @@
 </div>
 
 <div class="docs example">
-  <div class="title">Accordion</div>
-  <div class="content">
-    <div class="rr accordion">
-      <div class="panel active">
-        <div class="title">
-          Private Information
-        </div>
-        <div class="content active">
-          The content area is visible when the panel is active.
-        </div>
-      </div>
-      <div class="panel">
-        <div class="title">
-          Public Information
-        </div>
-        <div class="content">
-          The icon automatically changes to "expand_less" when active.
-        </div>
-      </div>
-      <div class="panel">
-        <div class="title">
-          Information
-        </div>
-        <div class="content">
-          The panel is made active on click.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="title">Navbar</div>
 
-<div class="docs example">
-  <div class="title">List</div>
-  <div class="header">Red & Action</div>
+  <div class="header">Normal</div>
   <div class="content">
-    <div class="rr red action list">
-      <div class="item">Create an account</div>
-      <div class="item">Sign in</div>
-      <div class="item">How it works</div>
-      <div class="item">The blog</div>
-      <div class="item">Contact us</div>
+    <div class="rr navbar">
+      <img class="rr small white logo">
+    </div>
+    <br>
+    <div class="rr navbar">
+      <i class="material-icons">keyboard_arrow_left</i>
+      <img class="rr small white logo">
+      <i class="material-icons">add</i>
+    </div>
+    <br>
+    <div class="rr navbar">
+      <i class="material-icons">keyboard_arrow_left</i>
+      <img class="rr small white logo">
+      <i class="material-icons">check</i>
     </div>
   </div>
-  <div class="header">Image & Action</div>
+  <div class="header">Inverted</div>
   <div class="content">
-    <div class="rr action list">
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">Business Name</div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">Business Name</div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">Community Name</div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">Community Name</div>
-      </div>
+    <div class="rr inverted navbar">
+      <img class="rr small logo">
     </div>
-  </div>
-  <div class="header">Image, Header & Description</div>
-  <div class="content">
-    <div class="rr list">
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">
-          <div class="header">Company Name</div>
-          <div class="description">
-            Adipisci aut deleniti dolor et, itaque iure libero.
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">
-          <div class="header">Company Name</div>
-          <div class="description">
-            Amet consequatur deserunt iusto laborum molestias necessitatibus non.
-          </div>
-        </div>
-      </div>
-      <div class="item">
-        <div class="image">
-          <img src="//unsplash.it/100">
-        </div>
-        <div class="content">
-          <div class="header">Company Name</div>
-          <div class="description">
-            Eos fugiat harum illum in minima neque quibusdam repudiandae.
-          </div>
-        </div>
-      </div>
+    <br>
+    <div class="rr inverted navbar">
+      <img class="rr small logo">
+      <i class="material-icons">close</i>
     </div>
-  </div>
-</div>
-
-<div class="docs example">
-  <div class="title">Tab Bar</div>
-  <div class="content">
-    <div class="rr tab bar">
-      <a href="#tab-bar" class="tab">
-        <i class="material-icons">dashboard</i>
-      </a>
-      <a href="#tab-bar" class="tab">
-        <i class="material-icons">find_replace</i>
-      </a>
-      <a href="#tab-bar" class="tab">
-        <i class="material-icons">message</i>
-      </a>
-      <a href="#tab-bar" class="active tab">
-        <i class="material-icons">person</i>
-      </a>
+    <br>
+    <div class="rr inverted navbar">
+      <i class="material-icons">keyboard_arrow_left</i>
+      <img class="rr small logo">
+      <i class="material-icons">menu</i>
     </div>
-  </div>
-</div>
-
-<div class="docs example">
-  <div class="title">Location</div>
-  <div class="header"></div>
-  <div class="content">
-    <div class="rr location">Spokane, WA</div>
-    <div class="rr location">Seatle, WA</div>
   </div>
 </div>
 
@@ -583,40 +700,21 @@
 </div>
 
 <div class="docs example">
-  <div class="title">Image</div>
-  <div class="header">Standard</div>
+  <div class="title">Tab Bar</div>
   <div class="content">
-    <div class="rr image">
-      <img src="//unsplash.it/500">
-    </div>
-  </div>
-
-  <div class="header">Avatar</div>
-  <div class="content">
-    <h3>Regular</h3>
-    <div class="rr avatar image">
-      <img src="//unsplash.it/180">
-    </div>
-    <h3>Inline</h3>
-    <div class="rr avatar inline image">
-      <img src="//unsplash.it/180">
-    </div>
-    <div class="rr avatar inline image">
-      <img src="//unsplash.it/180">
-    </div>
-    <div class="rr avatar inline image">
-      <img src="//unsplash.it/180">
-    </div>
-    <h3>Large</h3>
-    <div class="rr avatar large image">
-      <img src="//unsplash.it/180">
-    </div>
-  </div>
-
-  <div class="header">Circular</div>
-  <div class="content">
-    <div class="rr circular image">
-      <img src="//unsplash.it/500">
+    <div class="rr tab bar">
+      <a href="#tab-bar" class="tab">
+        <i class="material-icons">dashboard</i>
+      </a>
+      <a href="#tab-bar" class="tab">
+        <i class="material-icons">find_replace</i>
+      </a>
+      <a href="#tab-bar" class="tab">
+        <i class="material-icons">message</i>
+      </a>
+      <a href="#tab-bar" class="active tab">
+        <i class="material-icons">person</i>
+      </a>
     </div>
   </div>
 </div>
@@ -632,85 +730,25 @@
 </div>
 
 <div class="docs example">
-  <div class="title">Links</div>
+  <div class="title">Utilities</div>
+  <div class="header">Text Alignment</div>
   <div class="content">
-    <a href="#links" class="rr secondary link">See Profile</a>
-    <a href="#links" class="rr link">Send Message</a>
+    <div class="left aligned">
+      I am left aligned.
+    </div>
+    <div class="right aligned">
+      I am right aligned.
+    </div>
   </div>
-</div>
 
-<div class="docs example">
-  <div class="title">Headers</div>
-  <div class="header">Page</div>
+  <div class="header">Floats</div>
   <div class="content">
-    <h5 class="rr page header">Page Header</h5>
-  </div>
-  <div class="header">Primary</div>
-  <div class="content dark">
-    <h2 class="rr primary header">Primary Header</h2>
-  </div>
-  <div class="header">Secondary Header</div>
-  <div class="content">
-    <h2 class="rr secondary header">Secondary Header</h2>
-  </div>
-  <div class="header">Uppercase</div>
-  <div class="content dark">
-    <h2 class="rr primary uppercase header">Primary Uppercase Header</h2>
-  </div>
-</div>
-
-<div class="docs example">
-  <div class="title">Grid</div>
-  <div class="description">
-    <p>
-      RedRover CSS uses the wonderful <strong href="http://flexboxgrid.com">Flexbox Grid</strong>.
-    </p>
-    <ul>
-      <li>
-        <a target="_blank" href="http://flexboxgrid.com/">Flexbox Grid Docs</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://github.com/kristoferjoseph/flexboxgrid">Github Project</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="docs icons example">
-  <div class="title">Icons</div>
-  <div class="description">
-    All <a href="https://material.io/icons" target="_blank">material icons</a> are supported.
-    Here are some samples:
-  </div>
-  <div class="content">
-    <i class="material-icons">style</i>
-    <i class="material-icons">compare_arrows</i>
-    <i class="material-icons">dashboard</i>
-    <i class="material-icons">message</i>
-    <i class="material-icons">person</i>
-    <i class="material-icons">settings</i>
-    <i class="material-icons">check</i>
-    <i class="material-icons">history</i>
-    <i class="material-icons">edit</i>
-    <i class="material-icons">keyboard_arrow_left</i>
-    <i class="material-icons">keyboard_arrow_right</i>
-    <i class="material-icons">keyboard_arrow_down</i>
-    <i class="material-icons">keyboard_arrow_up</i>
-    <i class="material-icons">add_a_photo</i>
-    <i class="material-icons">place</i>
-    <i class="material-icons">public</i>
-    <i class="material-icons">email</i>
-    <i class="material-icons">lock</i>
-    <i class="material-icons">find_replace</i>
-    <i class="material-icons">send</i>
-    <i class="material-icons">priority_high</i>
-    <i class="material-icons">format_size</i>
-    <i class="material-icons">developer_mode</i>
-    <i class="material-icons">gavel</i>
-    <i class="material-icons">work</i>
-    <i class="material-icons">photo</i>
-    <i class="material-icons">rate_review</i>
-    <i class="material-icons">more_horiz</i>
+    <div class="floated left">
+      I am floated left.
+    </div>
+    <div class="floated right">
+      I am floated right.
+    </div>
   </div>
 </div>
 
