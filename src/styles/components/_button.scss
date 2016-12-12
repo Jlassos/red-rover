@@ -31,10 +31,8 @@
 
   &.circular {
     padding: 0;
-    width: 2em;
-    height: 2em;
-    font-size: 2em;
-    line-height: 2em;
+    width: $base_icon_size * 2;
+    height: $base_icon_size * 2;
     color: #FFF;
     background: none;
     border: solid 2px $red;
