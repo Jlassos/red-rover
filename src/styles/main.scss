@@ -13,12 +13,17 @@
 @import "../../node_modules/font-awesome/scss/font-awesome.scss";
 @import "./_variables";
 @import "./_global";
+
 // ----------------------------------------
 // Components
 @import "./components/_accordion";
 @import "./components/_avatar";
 @import "./components/_button";
+@import "./components/_card";
+@import "./components/_divider";
 @import "./components/_header";
+@import "./components/_icon";
+@import "./components/_card";
 @import "./components/_image";
 @import "./components/_links";
 @import "./components/_list";
@@ -32,3 +37,7 @@
 @import "./components/_tabs";
 @import "./components/_tabbar";
 @import "./components/_type";
+
+// ----------------------------------------
+// Components
+@import "./_helpers";

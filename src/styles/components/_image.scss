@@ -5,7 +5,7 @@
   max-width: 100%;
 
   &.circular {
-    border-radius: 999px;
+    border-radius: $border_radius_circular;
   }
 
   img {

@@ -15,4 +15,7 @@
       color: darken($gray_light, 10);
     }
   }
+  & + .rr.link {
+    margin-left: $base_padding;
+  }
 }

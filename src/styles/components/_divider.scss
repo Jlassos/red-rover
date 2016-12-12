@@ -1,0 +1,9 @@
+@import "../variables";
+
+.rr.divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: $base_padding 0;
+  background: $gray_lighter;
+}

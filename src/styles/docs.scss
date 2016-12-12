@@ -12,7 +12,7 @@ body {
   padding: 1em 1em 1em $docs_menu_width + 1rem;
 }
 
-.docs-menu {
+.docs.menu {
   position: fixed;
   top: 0;
   left: 0;
@@ -66,11 +66,11 @@ body {
   }
 }
 
-.docs-example {
+.docs.example {
   padding: 2em 0;
   background: $docs_background;
 
-  .docs-example-title {
+  & > .title {
     &:not(:first-child) {
       padding-top: 2em;
     }
@@ -80,7 +80,7 @@ body {
     color: $text_dark;
   }
 
-  .docs-example-header {
+  & > .header {
     padding: 2em 0 1em 0;
     font-size: 1.5em;
     text-align: center;
@@ -88,14 +88,18 @@ body {
     text-transform: uppercase;
   }
 
-  .docs-example-content {
+  & > .description,
+  & > .content {
     overflow: hidden;
     position: relative;
     margin: 2em auto;
-    width: 400px;
+    width: 34rem;
     padding: 1em;
-    &.docs-example-dark {
+    &.dark {
       background: $background_dark;
+    }
+    &.gray {
+      background: $background_gray;
     }
   }
 
@@ -117,6 +121,20 @@ body {
       color: #BBB;
     }
   }
+
+  // Icon Example
+  &.icons {
+    & > .content {
+      text-align: center;
+      i {
+        float: left;
+        padding: 0.5em;
+        width: 25%;
+        font-size: 2.5em;
+        color: $gray_dark;
+      }
+    }
+  }
 }
 
 // AnchorJS
@@ -128,21 +146,5 @@ body {
   color: mix($background_light, $red);
   &:hover {
     color: $red;
-  }
-}
-
-// Icon Example
-// ----------------------------------------
-
-.docs-example.docs-example-icons {
-  .docs-example-content {
-    text-align: center;
-    i {
-      float: left;
-      padding: 0.5em;
-      width: 25%;
-      font-size: 2.5em;
-      color: $gray_dark;
-    }
   }
 }

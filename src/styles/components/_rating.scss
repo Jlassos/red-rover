@@ -1,29 +1,11 @@
 @import "../_variables";
 
 .rr.rating {
-  display: inline-block;
-  color: $gray_light;
-  text-align: center;
-  line-height: 1;
-  font-size: 1em;
-  .label {
-    text-transform: uppercase;
-    font-size: $font_size_extra_small;
-  }
-  .star {
-    display: inline;
-    padding: 0 0.125em;
-    vertical-align: middle;
-    font-family: 'Material Icons';
-    &::before {
-      content: '\e838'; // A star icon
-    }
-    &.half {
-      &::before {
-        content: '\e839'; // A half star icon
-      }
-    }
-    &.active {
+  .material-icons {
+    font-size: inherit;
+    color: $gray_lighter;
+
+    &.red {
       color: $red;
     }
   }

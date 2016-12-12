@@ -1,0 +1,9 @@
+@import "../_variables";
+
+.rr.card {
+  padding: $base_padding;
+  font-size: $font_size_small;
+  border-radius: $border_radius_small;
+  box-shadow: $box_shadow;
+  background: $background_light;
+}

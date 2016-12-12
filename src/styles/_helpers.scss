@@ -1,0 +1,17 @@
+.aligned {
+  &.left {
+    text-align: left;
+  }
+  &.right {
+    text-align: right;
+  }
+}
+
+.floated {
+  &.left {
+    float: left;
+  }
+  &.right {
+    float: right;
+  }
+}

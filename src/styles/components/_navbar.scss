@@ -7,7 +7,7 @@
   position: relative;
   height: 3.5em;
   background: $red;
-  box-shadow: 0 2px 4px transparentize(#000, 0.8);
+  box-shadow: $box_shadow;
   z-index: $zindex_navbar;
 
   // Icons

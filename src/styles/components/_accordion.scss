@@ -27,7 +27,8 @@
         right: 0;
         bottom: 0;
         font-size: 2.5em;
-        line-height: 1.2;
+        // magic number: vertically centers icon
+        line-height: 1.4;
       }
     }
 

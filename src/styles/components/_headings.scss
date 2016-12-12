@@ -1,0 +1,25 @@
+@import "../_variables.scss";
+
+.rr.header {
+  font-family: $base_font_family;
+  &.page {
+    text-transform: uppercase;
+    color: $gray_light;
+    text-align: center;
+    font-weight: lighter;
+    padding: 1em;
+  }
+  &.primary {
+    text-align: center;
+    color: white;
+    font-weight: normal;
+  }
+  &.secondary {
+    color: $red;
+    text-transform: uppercase;
+    font-size: 1em;
+  }
+  &.uppercase {
+    text-transform: uppercase;
+  }
+}

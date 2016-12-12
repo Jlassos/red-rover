@@ -4,11 +4,11 @@ html, body {
   margin: 0;
   font-family: $base_font_family;
   font-weight: $base_font_weight;
-  font-size: $base_font_size;
+  font-size: $master_size;
   background: $background_dark;
   color: $text_light;
-  line-height: 1.7;
-  letter-spacing: 1px;
+  line-height: $base_line_height;
+  letter-spacing: $base_letter_spacing;
 }
 
 * {

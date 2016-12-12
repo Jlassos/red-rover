@@ -6,7 +6,7 @@
     width: 3.5em;
     height: 3.5em;
     overflow: hidden;
-    border-radius: 9999em;
+    border-radius: $border_radius_circular;
     margin-right: $base_padding;
     img {
       display: block;
@@ -33,6 +33,7 @@
       top: 0;
       right: 0;
       font-size: $font_size_extra_small;
+      line-height: $line_height_small;
       text-transform: uppercase;
       color: $gray_light;
     }

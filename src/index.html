@@ -8,7 +8,7 @@
   <link rel="shortcut icon" type="image/png" href="/favicon.png" />
 </head>
 <body>
-<div class="docs-menu">
+<div class="docs menu">
   <div class="header">
     <img class="rr small white logo">
     CSS Framework
@@ -34,33 +34,56 @@
     <a href="/pages/account/more-info-editing-talents.html" class="sub item">More Info Editing Talents</a>
     <a href="/pages/account/are-you-sure.html" class="sub item">Are you sure</a>
   </div>
-  <h2>Components</h2>
+  <h2>CSS</h2>
   <!-- This menu is auto populated with example titles/headers -->
 </div>
-<div class="docs-example">
-  <div class="docs-example-title">Logo</div>
-  <div class="docs-example-header">Colors</div>
-  <div class="docs-example-content docs-example-dark">
+<div class="docs example">
+  <div class="title">Helpers</div>
+  <div class="header">Text Alignment</div>
+  <div class="content">
+    <div class="left aligned">
+      I am left aligned.
+    </div>
+    <div class="right aligned">
+      I am right aligned.
+    </div>
+  </div>
+
+  <div class="header">Floats</div>
+  <div class="content">
+    <div class="floated left">
+      I am floated left.
+    </div>
+    <div class="floated right">
+      I am floated right.
+    </div>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Logo</div>
+  <div class="header">Colors</div>
+  <div class="content dark">
     <img class="rr logo">
     <img class="rr white logo">
   </div>
-  <div class="docs-example-header">Sizes</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Sizes</div>
+  <div class="content dark">
     <img class="rr small logo">
     <img class="rr logo">
     <img class="rr large logo">
   </div>
-  <div class="docs-example-header">Mark</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Mark</div>
+  <div class="content dark">
     <img class="rr mark logo">
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Navbar</div>
+<div class="docs example">
+  <div class="title">Navbar</div>
 
-  <div class="docs-example-header">Normal</div>
-  <div class="docs-example-content">
+  <div class="header">Normal</div>
+  <div class="content">
     <div class="rr navbar">
       <img class="rr small white logo">
     </div>
@@ -77,8 +100,8 @@
       <i class="material-icons">check</i>
     </div>
   </div>
-  <div class="docs-example-header">Inverted</div>
-  <div class="docs-example-content">
+  <div class="header">Inverted</div>
+  <div class="content">
     <div class="rr inverted navbar">
       <img class="rr small logo">
     </div>
@@ -96,29 +119,29 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Button</div>
+<div class="docs example">
+  <div class="title">Button</div>
 
-  <div class="docs-example-header">Primary</div>
-  <div class="docs-example-content">
+  <div class="header">Primary</div>
+  <div class="content">
     <button class="rr primary button">Create an Account</button>
   </div>
 
-  <div class="docs-example-header">Secondary</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Secondary</div>
+  <div class="content dark">
     <button class="rr secondary button">Sign in</button>
   </div>
 
-  <div class="docs-example-header">Fluid</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Fluid</div>
+  <div class="content dark">
     <button class="rr fluid primary button">Fluid Primary</button>
   </div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="content dark">
     <button class="rr fluid secondary button">Fluid Secondary</button>
   </div>
 
-  <div class="docs-example-header">Circular</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Circular</div>
+  <div class="content dark">
     <button class="rr circular button">
       <i class="material-icons">format_size</i>
     </button>
@@ -133,8 +156,8 @@
     </button>
   </div>
 
-  <div class="docs-example-header">Social</div>
-  <div class="docs-example-content">
+  <div class="header">Social</div>
+  <div class="content">
     <button class="rr social button">
       <i class="fa fa-linkedin"></i>
     </button>
@@ -147,24 +170,125 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Media</div>
-  <div class="docs-example-header">Image & Header</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Card</div>
+
+  <div class="header">Default Card</div>
+  <div class="content gray">
+    <div class="rr card">
+      This is a card
+    </div>
+  </div>
+
+  <div class="header">Search Match</div>
+  <div class="content gray">
+    <div class="rr card">
+      <div class="row middle-xs">
+        <div class="col-xs-8">
+          <div class="rr media">
+            <div class="image">
+              <img src="//unsplash.it/100">
+            </div>
+            <div class="content">
+              <div class="header">Company Name</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs">
+          <div class="rr right aligned location">Seattle, WA</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <div class="rr statistic">
+            <div class="value">
+              <div class="rr rating">
+                <i class="red material-icons">star</i>
+                <i class="red material-icons">star</i>
+                <i class="red material-icons">star</i>
+                <i class="red material-icons">star</i>
+                <i class="red material-icons">star</i>
+              </div>
+            </div>
+            <div class="label">Average Rating</div>
+          </div>
+        </div>
+        <div class="col-xs">
+          <div class="rr statistic">
+            <div class="value">25</div>
+            <div class="label">Reviews</div>
+          </div>
+        </div>
+        <div class="col-xs">
+          <div class="rr statistic">
+            <div class="value">N/A</div>
+            <div class="label">Community</div>
+          </div>
+        </div>
+      </div>
+      <div class="rr divider"></div>
+      <div class="row">
+        <div class="col-xs">
+          <div class="rr left aligned statistic">
+            <div class="label">Talent Available</div>
+            <div class="value">Lead Generation</div>
+          </div>
+        </div>
+        <div class="col-xs">
+          <div class="rr left aligned statistic">
+            <div class="label">Talent Needed</div>
+            <div class="value">n/a</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs">
+          <p>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted material-icons">person</i>
+            <i class="circular inverted gray material-icons">person</i>
+            <i class="circular inverted gray material-icons">person</i>
+            <i class="circular inverted gray material-icons">person</i>
+            <small>+3 more</small>
+          </p>
+        </div>
+      </div>
+      <div class="rr divider"></div>
+      <div class="row">
+        <div class="col-xs">
+          <a href="#search-match" class="rr secondary link">
+            <i class="material-icons">keyboard_arrow_down</i> Show Reviews
+          </a>
+          <a href="#search-match" class="rr right floated secondary link">See Profile</a>
+          <a href="#search-match" class="rr right floated link">Send Message</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="docs example">
+  <div class="title">Media</div>
+  <div class="header">Image & Header</div>
+  <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//placehold.it/200">
+        <img src="//unsplash.it/100">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
       </div>
     </div>
   </div>
-  <div class="docs-example-header">Image, Header & Description</div>
-  <div class="docs-example-content">
+  <div class="header">Image, Header & Description</div>
+  <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//placehold.it/200">
+        <img src="//unsplash.it/100">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -175,11 +299,11 @@
       </div>
     </div>
   </div>
-  <div class="docs-example-header">Image, Header, Description & Extra</div>
-  <div class="docs-example-content">
+  <div class="header">Image, Header, Description & Extra</div>
+  <div class="content">
     <div class="rr media">
       <div class="image">
-        <img src="//placehold.it/200">
+        <img src="//unsplash.it/100">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -189,19 +313,19 @@
         </div>
         <div class="extra">
           <div class="rr rating">
-            <div class="active star"></div>
-            <div class="active star"></div>
-            <div class="active star"></div>
-            <div class="star"></div>
-            <div class="star"></div>
-            <div class="label">Rating Left</div>
+            <i class="red material-icons">star</i>
+            <i class="red material-icons">star</i>
+            <i class="red material-icons">star</i>
+            <i class="red material-icons">star</i>
+            <i class="red material-icons">star</i>
           </div>
+          Rating Left
         </div>
       </div>
     </div>
     <div class="rr media">
       <div class="image">
-        <img src="//placehold.it/200">
+        <img src="//unsplash.it/100">
       </div>
       <div class="content">
         <div class="header">Company Name</div>
@@ -217,10 +341,10 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Modal</div>
-  <div class="docs-example-header">Confirmation</div>
-  <div class="docs-example-content docs-example-dark" style="height: 30em;">
+<div class="docs example">
+  <div class="title">Modal</div>
+  <div class="header">Confirmation</div>
+  <div class="content dark" style="height: 30em;">
     <div class="rr modal">
       <div class="content">
         <i class="material-icons">check</i>
@@ -235,9 +359,9 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Accordion</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Accordion</div>
+  <div class="content">
     <div class="rr accordion">
       <div class="panel active">
         <div class="title">
@@ -267,10 +391,10 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">List</div>
-  <div class="docs-example-header">Red & Action</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">List</div>
+  <div class="header">Red & Action</div>
+  <div class="content">
     <div class="rr red action list">
       <div class="item">Create an account</div>
       <div class="item">Sign in</div>
@@ -279,41 +403,41 @@
       <div class="item">Contact us</div>
     </div>
   </div>
-  <div class="docs-example-header">Image & Action</div>
-  <div class="docs-example-content">
+  <div class="header">Image & Action</div>
+  <div class="content">
     <div class="rr action list">
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">Business Name</div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">Business Name</div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">Community Name</div>
       </div>
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">Community Name</div>
       </div>
     </div>
   </div>
-  <div class="docs-example-header">Image, Header & Description</div>
-  <div class="docs-example-content">
+  <div class="header">Image, Header & Description</div>
+  <div class="content">
     <div class="rr list">
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">
           <div class="header">Company Name</div>
@@ -324,7 +448,7 @@
       </div>
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">
           <div class="header">Company Name</div>
@@ -335,7 +459,7 @@
       </div>
       <div class="item">
         <div class="image">
-          <img src="//placehold.it/100">
+          <img src="//unsplash.it/100">
         </div>
         <div class="content">
           <div class="header">Company Name</div>
@@ -348,9 +472,9 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Tab Bar</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Tab Bar</div>
+  <div class="content">
     <div class="rr tab bar">
       <a href="#tab-bar" class="tab">
         <i class="material-icons">dashboard</i>
@@ -368,76 +492,87 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Location</div>
-  <div class="docs-example-header"></div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Location</div>
+  <div class="header"></div>
+  <div class="content">
     <div class="rr location">Spokane, WA</div>
     <div class="rr location">Seatle, WA</div>
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Rating</div>
-  <div class="docs-example-header">Empty</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Rating</div>
+  <div class="header">Empty</div>
+  <div class="content">
     <div class="rr rating">
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="label">Average Rating</div>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
     </div>
   </div>
-  <div class="docs-example-header">Half</div>
-  <div class="docs-example-content">
+  <div class="header">Half</div>
+  <div class="content">
     <div class="rr rating">
-      <div class="active star"></div>
-      <div class="active star"></div>
-      <div class="half active star"></div>
-      <div class="star"></div>
-      <div class="star"></div>
-      <div class="label">Average Rating</div>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
+      <i class="material-icons">star</i>
+      <i class="material-icons">star</i>
     </div>
   </div>
-  <div class="docs-example-header">Full</div>
-  <div class="docs-example-content">
+  <div class="header">Full</div>
+  <div class="content">
     <div class="rr rating">
-      <div class="active star"></div>
-      <div class="active star"></div>
-      <div class="active star"></div>
-      <div class="active star"></div>
-      <div class="active star"></div>
-      <div class="label">Average Rating</div>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
+      <i class="red material-icons">star</i>
     </div>
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Statistic</div>
-  <div class="docs-example-header">Value on Top</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Statistic</div>
+  <div class="header">Value on Top</div>
+  <div class="content">
+    <div class="rr statistic">
+      <div class="value">
+        <div class="rr rating">
+          <i class="red material-icons">star</i>
+          <i class="red material-icons">star</i>
+          <i class="red material-icons">star</i>
+          <i class="red material-icons">star</i>
+          <i class="red material-icons">star</i>
+        </div>
+      </div>
+      <div class="label">Average Rating</div>
+    </div>
+  </div>
+  <div class="content">
     <div class="rr statistic">
       <div class="value">25</div>
       <div class="label">Reviews</div>
     </div>
   </div>
-  <div class="docs-example-content">
+  <div class="content">
     <div class="rr statistic">
       <div class="value">Techstars Spokane</div>
       <div class="label">Community</div>
     </div>
   </div>
-  <div class="docs-example-header">Value on Bottom</div>
-  <div class="docs-example-content">
+  <div class="header">Value on Bottom</div>
+  <div class="content">
     <div class="rr statistic">
       <div class="label">Talent Needed</div>
       <div class="value">n/a</div>
     </div>
   </div>
-  <div class="docs-example-header">Multiple Values</div>
-  <div class="docs-example-content">
+  <div class="header">Multiple Values</div>
+  <div class="content">
     <div class="rr statistic">
       <div class="label">Talent Available</div>
       <div class="value">Business Development</div>
@@ -447,48 +582,48 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Image</div>
-  <div class="docs-example-header">Standard</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Image</div>
+  <div class="header">Standard</div>
+  <div class="content">
     <div class="rr image">
       <img src="//unsplash.it/500">
     </div>
   </div>
 
-  <div class="docs-example-header">Avatar</div>
-  <div class="docs-example-content">
+  <div class="header">Avatar</div>
+  <div class="content">
     <h3>Regular</h3>
     <div class="rr avatar image">
-      <img src="//unsplash.it/500">
+      <img src="//unsplash.it/180">
     </div>
     <h3>Inline</h3>
     <div class="rr avatar inline image">
-      <img src="//unsplash.it/500">
+      <img src="//unsplash.it/180">
     </div>
     <div class="rr avatar inline image">
-      <img src="//unsplash.it/500">
+      <img src="//unsplash.it/180">
     </div>
     <div class="rr avatar inline image">
-      <img src="//unsplash.it/500">
+      <img src="//unsplash.it/180">
     </div>
     <h3>Large</h3>
     <div class="rr avatar large image">
-      <img src="//unsplash.it/500">
+      <img src="//unsplash.it/180">
     </div>
   </div>
 
-  <div class="docs-example-header">Circular</div>
-  <div class="docs-example-content">
+  <div class="header">Circular</div>
+  <div class="content">
     <div class="rr circular image">
       <img src="//unsplash.it/500">
     </div>
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Tabs</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Tabs</div>
+  <div class="content">
     <div class="rr tabs">
       <a href="#tabs" class="active tab">Businesses</a>
       <a href="#tabs" class="tab">Communities</a>
@@ -496,37 +631,37 @@
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Links</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Links</div>
+  <div class="content">
     <a href="#links" class="rr secondary link">See Profile</a>
     <a href="#links" class="rr link">Send Message</a>
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Headers</div>
-  <div class="docs-example-header">Page</div>
-  <div class="docs-example-content">
+<div class="docs example">
+  <div class="title">Headers</div>
+  <div class="header">Page</div>
+  <div class="content">
     <h5 class="rr page header">Page Header</h5>
   </div>
-  <div class="docs-example-header">Primary</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Primary</div>
+  <div class="content dark">
     <h2 class="rr primary header">Primary Header</h2>
   </div>
-  <div class="docs-example-header">Secondary Header</div>
-  <div class="docs-example-content">
+  <div class="header">Secondary Header</div>
+  <div class="content">
     <h2 class="rr secondary header">Secondary Header</h2>
   </div>
-  <div class="docs-example-header">Uppercase</div>
-  <div class="docs-example-content docs-example-dark">
+  <div class="header">Uppercase</div>
+  <div class="content dark">
     <h2 class="rr primary uppercase header">Primary Uppercase Header</h2>
   </div>
 </div>
 
-<div class="docs-example">
-  <div class="docs-example-title">Grid</div>
-  <div class="docs-example-content no-code">
+<div class="docs example">
+  <div class="title">Grid</div>
+  <div class="description">
     <p>
       RedRover CSS uses the wonderful <strong href="http://flexboxgrid.com">Flexbox Grid</strong>.
     </p>
@@ -541,9 +676,13 @@
   </div>
 </div>
 
-<div class="docs-example docs-example-icons">
-  <div class="docs-example-title">Icons</div>
-  <div class="docs-example-content">
+<div class="docs icons example">
+  <div class="title">Icons</div>
+  <div class="description">
+    All <a href="https://material.io/icons" target="_blank">material icons</a> are supported.
+    Here are some samples:
+  </div>
+  <div class="content">
     <i class="material-icons">style</i>
     <i class="material-icons">compare_arrows</i>
     <i class="material-icons">dashboard</i>

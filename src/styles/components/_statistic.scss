@@ -1,12 +1,11 @@
 @import "../_variables.scss";
 
 .rr.statistic {
-  font-size: small;
   text-align: center;
   text-transform: uppercase;
+  line-height: $line_height_small;
 
   .value {
-    color: #000;
     font-weight: bold;
   }
 
