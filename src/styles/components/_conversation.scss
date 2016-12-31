@@ -1,0 +1,44 @@
+@import "../_variables.scss";
+
+.rr.conversation {
+  padding: 10px;
+  .comment {
+    position: relative;
+    padding: 1em;
+    margin: 1em 0;
+    width: 70%;
+    border-radius: 0.5em;
+    font-size: $font_size_small;
+
+    &.right::after,
+    &.left::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      border: solid transparent;
+      border-top-width: 1em;
+      border-left-width: 0.5em;
+      border-right-width: 0.5em;
+    }
+
+    &.right {
+      float: right;
+      background: $gray_darkest;
+      color: white;
+      &::after {
+        right: 0;
+        border-top-color: $gray_darkest;
+        transform: translate(0.5em, 0.6em) rotate(-45deg);
+      }
+    }
+    &.left {
+      float: left;
+      background: $gray_lighter;
+      &::after {
+        left: 0;
+        border-top-color: $gray_lighter;
+        transform: translate(-0.5em, 0.6em) rotate(45deg);
+      }
+    }
+  }
+}
