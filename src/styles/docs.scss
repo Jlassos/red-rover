@@ -94,12 +94,6 @@ body {
     margin: 2em auto;
     width: 34rem;
     padding: 1em;
-    &.dark {
-      background: $background_dark;
-    }
-    &.gray {
-      background: $background_gray;
-    }
   }
 
   pre {

@@ -1,0 +1,28 @@
+@import "../_variables.scss";
+
+.rr.section {
+  // Colors
+  // ----------------------------------------
+  &.inverted {
+    background: $background_dark;
+    color: $text_light;
+  }
+  &.gray {
+    background: $background_gray;
+    color: $text_dark;
+  }
+  &.white {
+    background: $background_light;
+    color: $text_dark;
+  }
+  &.red {
+    background: $red;
+    color: $text_light;
+  }
+
+  // Variations
+  // ----------------------------------------
+  &.padded {
+    padding: $base_padding;
+  }
+}
