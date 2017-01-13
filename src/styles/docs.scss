@@ -12,6 +12,15 @@ body {
   padding: 1em 1em 1em $docs_menu_width + 1rem;
 }
 
+code {
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  font-size: 0.9em;
+  background: #F2F2F2;
+  border-radius: 0.2em;
+  color: #555;
+}
+
 .docs.menu {
   position: fixed;
   top: 0;
@@ -112,6 +121,10 @@ body {
       padding: 0.15em 0.5em;
       background: #EEE;
       color: #BBB;
+    }
+
+    code {
+      background: none;
     }
   }
 

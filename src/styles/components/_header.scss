@@ -4,6 +4,7 @@
   font-family: $base_font_family;
   &.page {
     position: relative;
+    margin: 0;
     box-shadow: $box_shadow;
     background-color: white;
     text-transform: uppercase;

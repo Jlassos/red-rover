@@ -19,14 +19,6 @@
       vertical-align: middle;
       max-width: 100%;
     }
-
-    // keep content top aligned with the top of images
-    & + .content {
-      align-self: flex-start;
-      .header {
-        line-height: 1;
-      }
-    }
   }
 
   .content {
@@ -35,6 +27,8 @@
     align-self: center;
     color: $text_dark;
     .header {
+      // keep content top aligned with the top of images
+      line-height: 1;
       font-size: $font_size_large;
       text-transform: uppercase;
       font-weight: bold;

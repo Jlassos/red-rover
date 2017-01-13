@@ -24,5 +24,8 @@
   // ----------------------------------------
   &.padded {
     padding: $base_padding;
+    &.very {
+      padding: $base_padding * 2;
+    }
   }
 }

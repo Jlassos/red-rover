@@ -5,10 +5,17 @@ html, body {
   font-family: $base_font_family;
   font-weight: $base_font_weight;
   font-size: $master_size;
-  background: $background_dark;
-  color: $text_light;
   line-height: $base_line_height;
   letter-spacing: $base_letter_spacing;
+}
+
+body {
+  background: $background_light;
+  color: $text_dark;
+}
+
+strong {
+  font-weight: 900;
 }
 
 * {
