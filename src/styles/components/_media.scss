@@ -1,6 +1,12 @@
 .rr.media {
   display: flex;
-  padding: 1em 0;
+  width: 100%;
+  background: $background_light;
+
+  & + .rr.media {
+    margin-top: $base_padding;
+  }
+
   .image {
     flex: 0 0 auto;
     width: 3.5em;
@@ -13,16 +19,28 @@
       vertical-align: middle;
       max-width: 100%;
     }
+
+    // keep content top aligned with the top of images
+    & + .content {
+      align-self: flex-start;
+      .header {
+        line-height: 1;
+      }
+    }
   }
 
   .content {
     position: relative;
     flex: 1;
     align-self: center;
+    color: $text_dark;
     .header {
       font-size: $font_size_large;
       text-transform: uppercase;
       font-weight: bold;
+      &.red {
+        color: $red;
+      }
     }
     .description {
       margin-top: 0.2em;

@@ -2,7 +2,7 @@
 // Base
 
 // The master size knob.
-// All components use `em` based
+// All components use `em` based sizing
 $master_size: 15px;
 
 // ----------------------------------------
@@ -36,7 +36,6 @@ $text_light: #FFF;
 $base_font_family: Raleway, sans-serif;
 $base_font_weight: 300;
 
-$base_font_size: 1em;
 $font_size_small: 0.9rem;
 $font_size_large: 1.2rem;
 $font_size_extra_small: 0.8rem;
@@ -72,8 +71,8 @@ $base_border: 1px solid black;
 
 // ----------------------------------------
 // Shadows
-$box_shadow: 0 0.1em 0.2em transparentize(#000, 0.8);
-$box_shadow_large: 0 0.2em 0.4em transparentize(#000, 0.8);
+$box_shadow: 0 0.1em 0.2em transparentize(#000, 0.85);
+$box_shadow_large: 0 0.2em 0.4em transparentize(#000, 0.85);
 
 // ----------------------------------------
 // Z-Index

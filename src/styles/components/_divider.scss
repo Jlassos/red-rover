@@ -6,4 +6,10 @@
   height: 1px;
   margin: $base_padding 0;
   background: $gray_lighter;
+  &.hidden {
+    background: none;
+  }
+  &.small {
+    margin: $base_padding * 0.5 0;
+  }
 }

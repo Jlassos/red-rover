@@ -10,42 +10,10 @@
     position: relative;
     padding: $base_padding;
     color: $text_dark;
-    text-transform: uppercase;
-    font-weight: bold;
     border-bottom: solid 1px $gray_lighter;
     text-decoration: none;
     &:hover {
       text-decoration: none;
-    }
-    .image {
-      flex: none;
-      align-self: center;
-      width: 2.5em;
-      margin-right: 1em;
-      img {
-        display: block;
-        border-radius: $border_radius_circular;
-        height: 2.5em;
-        width: 2.5em;
-      }
-    }
-    .content {
-      flex: 1;
-      align-self: center;
-      padding: $base_padding;
-      .header {
-      }
-      .description {
-        font-weight: normal;
-        font-size: $font_size_extra_small;
-        text-transform: none;
-      }
-    }
-  }
-
-  &.red {
-    .item {
-      color: $red;
     }
   }
 
@@ -64,9 +32,6 @@
         font-size: 2.5em;
         margin: auto;
         height: 1em;
-      }
-      &:hover {
-        background: $gray_lightest;
       }
     }
   }
