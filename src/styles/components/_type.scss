@@ -12,3 +12,29 @@ h6, .h6 {
   font-family: $heading_font_family;
   font-weight: $heading_font_weight;
 }
+
+
+h1, .h1 {
+  margin: ($base_padding * 2) 0 ($base_padding * 1.5);
+  font-size: $base_font_size * 2;
+}
+h2, .h2 {
+  margin: ($base_padding * 1.5) 0 ($base_padding * 1.125);
+  font-size: $base_font_size * 1.5;
+}
+h3, .h3 {
+  margin: ($base_padding * 1.2) 0 ($base_padding * 0.9);
+  font-size: $base_font_size * 1.2;
+}
+h4, .h4 {
+  margin: ($base_padding * 1) 0 ($base_padding * 0.75);
+  font-size: $base_font_size * 1;
+}
+h5, .h5 {
+  margin: ($base_padding * 0.9) 0 ($base_padding * 0.675);
+  font-size: $base_font_size * 0.9;
+}
+h6, .h6 {
+  margin: ($base_padding * 0.8) 0 ($base_padding * 0.6);
+  font-size: $base_font_size * 0.8;
+}

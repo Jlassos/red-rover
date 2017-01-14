@@ -1,26 +1,27 @@
 @import "../_variables";
 
 .rr.card {
-  padding: $base_padding;
+  margin-bottom: $base_padding;
   font-size: $font_size_small;
   border-radius: $border_radius_small;
   box-shadow: $box_shadow;
   background: $background_light;
+  overflow: hidden;
+  .content {
+    padding: $base_padding;
+  }
 }
 
 // Groups
 // ----------------------------------------
 .rr.cards {
+  margin-bottom: $base_padding;
   border-radius: $border_radius_small;
   box-shadow: $box_shadow;
 
   .rr.card {
     border-radius: 0;
     box-shadow: none;
-
-    & + .rr.card {
-      border-top: 1px solid $gray_lighter;
-    }
 
     &:first-child {
       border-top-left-radius: $border_radius_small;
@@ -30,6 +31,14 @@
     &:last-child {
       border-bottom-left-radius: $border_radius_small;
       border-bottom-right-radius: $border_radius_small;
+    }
+
+    &:not(:first-child) {
+      border-top: 1px solid $gray_lighter;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }

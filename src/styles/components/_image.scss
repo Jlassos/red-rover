@@ -8,9 +8,13 @@
     border-radius: $border_radius_circular;
   }
 
+  &.fluid {
+    width: 100%;
+  }
+
   img {
     vertical-align: top;
-    max-width: 100%;
+    width: 100%;
   }
 }
 

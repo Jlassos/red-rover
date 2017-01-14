@@ -5,6 +5,7 @@
   color: $red;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
   &:hover {
     color: darken($red, 10);
     text-decoration: none;

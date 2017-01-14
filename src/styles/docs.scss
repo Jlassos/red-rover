@@ -1,12 +1,6 @@
 @import "./_variables";
 
-$docs_background: #FFF;
 $docs_menu_width: 20rem;
-
-html, body {
-  background: $docs_background;
-  color: $text_dark;
-}
 
 body {
   padding: 1em 1em 1em $docs_menu_width + 1rem;
@@ -76,7 +70,6 @@ code {
 
 .docs.example {
   padding: 2em 0;
-  background: $docs_background;
 
   & > .title {
     &:not(:first-child) {
@@ -103,6 +96,12 @@ code {
     margin: 2em auto;
     width: 34rem;
     padding: 1em;
+  }
+
+  & > .description {
+    padding-top: 0;
+    margin-top: 0;
+    text-align: justify;
   }
 
   pre {

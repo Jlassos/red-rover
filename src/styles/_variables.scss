@@ -35,10 +35,12 @@ $text_light: #FFF;
 
 $base_font_family: Raleway, sans-serif;
 $base_font_weight: 300;
+$base_font_size: 1rem;
 
-$font_size_small: 0.9rem;
-$font_size_large: 1.2rem;
-$font_size_extra_small: 0.8rem;
+$font_size_small: $base_font_size * 0.9;
+$font_size_large: $base_font_size * 1.2;
+$font_size_extra_large: $base_font_size * 1.5;
+$font_size_extra_small: $base_font_size * 0.8;
 
 $base_icon_size: 2rem;
 $icon_size_extra_small: $base_icon_size * 0.5;
@@ -52,7 +54,7 @@ $line_height_small: 1.4;
 $base_letter_spacing: 1px;
 
 $heading_font_family: $base_font_family;
-$heading_font_weight: 600;
+$heading_font_weight: 300;
 
 // ----------------------------------------
 // Padding
@@ -71,11 +73,11 @@ $base_border: 1px solid black;
 
 // ----------------------------------------
 // Shadows
-$box_shadow: 0 0.1em 0.2em transparentize(#000, 0.85);
-$box_shadow_large: 0 0.2em 0.4em transparentize(#000, 0.85);
+$box_shadow: 0 0.1em 0.2em transparentize(#000, 0.8);
+$box_shadow_large: 0 0.2em 0.4em transparentize(#000, 0.8);
 
 // ----------------------------------------
 // Z-Index
 
 $zindex_navbar: 2000;
-$zindex_headers: 1000;
+$zindex_headings: 1000;

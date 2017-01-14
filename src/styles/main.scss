@@ -3,9 +3,9 @@
 @import "../../node_modules/normalize.css/normalize.css";
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
-
 // Flexboxgrid
 @import "../../node_modules/flexboxgrid/dist/flexboxgrid.css";
+
 .container {
   padding: 0 1em;
 }
@@ -21,6 +21,7 @@
 @import "./components/_button";
 @import "./components/_card";
 @import "./components/_divider";
+@import "./components/_footer";
 @import "./components/_header";
 @import "./components/_icon";
 @import "./components/_card";

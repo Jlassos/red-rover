@@ -1,7 +1,9 @@
 @import "../_variables.scss";
 
 .rr.header {
-  font-family: $base_font_family;
+  text-align: center;
+  font-family: $heading_font_family;
+  font-weight: $heading_font_weight;
   &.page {
     position: relative;
     margin: 0;
@@ -12,12 +14,7 @@
     text-align: center;
     font-weight: lighter;
     padding: $base_padding;
-    z-index: $zindex_headers;
-  }
-  &.primary {
-    text-align: center;
-    color: white;
-    font-weight: normal;
+    z-index: $zindex_headings;
   }
   &.secondary {
     color: $red;
