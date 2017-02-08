@@ -1,0 +1,67 @@
+@import "../variables";
+
+.rr.toggle {
+  display: inline-block;
+  color: $gray;
+  cursor: pointer;
+
+  .off,
+  .on {
+    display: inline-block;
+    margin: 0 $base_padding * 0.5;
+    text-transform: uppercase;
+    font-size: $font_size_extra_small;
+    font-weight: bold;
+  }
+
+  input[type="checkbox"] {
+    position: relative;
+    width: 3em;
+    height: 1em;
+    vertical-align: middle;
+    cursor: pointer;
+    visibility: hidden;
+    // the gray bar
+    &::before {
+      content: '';
+      display: block;
+      height: 100%;
+      background: $gray_lighter;
+      visibility: visible;
+      border-radius: 9999px;
+    }
+    // the red circle
+    &::after {
+      position: absolute;
+      content: '';
+      display: block;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      width: 1.5em;
+      height: 1.5em;
+      // magic number!
+      // right + width must equal the input width (gray bar)
+      right: 1.5em;
+      transition: left 200ms, right 200ms;
+      background: #F00;
+      visibility: visible;
+      border-radius: 9999px;
+    }
+  }
+
+  &.active {
+    input[type="checkbox"]::after {
+      right: 0;
+    }
+    .on {
+      color: #F00;
+    }
+  }
+
+  &:not(.active) {
+    .off {
+      color: #F00;
+    }
+  }
+}
