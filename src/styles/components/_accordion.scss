@@ -32,7 +32,7 @@
       }
     }
 
-    .content {
+    & > .content {
       display: none;
       padding: $base_padding;
       background: $gray_lightest;

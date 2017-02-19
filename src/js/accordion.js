@@ -1,11 +1,12 @@
 // ----------------------------------------
 // Accordion
 // ----------------------------------------
-$(function() {
-  var $titles = $('.rr.accordion .panel .title')
+jQuery(function() {
+  var $titles = jQuery('.rr.accordion .panel .title')
+  console.log($titles)
 
   var handleTitleClick = function() {
-    var $this = $(this)
+    var $this = jQuery(this)
     var $panel = $this.closest('.panel')
     var isActive = $panel.is('.active')
 

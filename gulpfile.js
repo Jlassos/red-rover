@@ -31,6 +31,11 @@ const paths = {
     dest: 'dist/js',
     watch: 'src/js/**/*',
   },
+  docsJs: {
+    src: 'src/docs.js',
+    dest: 'dist/js',
+    watch: 'src/docs.js',
+  },
   root: {
     src: ['src/favicon.png'],
     dest: 'dist',
@@ -56,6 +61,7 @@ gulp.task('build', (cb) => {
       'build:fonts',
       'build:html',
       'build:images',
+      'build:docs:js',
       'build:js',
       'build:root',
       'build:styles',
@@ -87,6 +93,14 @@ gulp.task('build:js', (cb) => {
     .pipe(plumber())
     .pipe(iife())
     .pipe(concat('main.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest(paths.js.dest))
+})
+gulp.task('build:docs:js', (cb) => {
+  return gulp.src(paths.docsJs.src)
+    .pipe(plumber())
+    .pipe(iife())
+    .pipe(concat('docs.js'))
     .pipe(uglify())
     .pipe(gulp.dest(paths.js.dest))
 })
@@ -131,6 +145,7 @@ gulp.task('watch', (cb) => {
     'watch:html',
     'watch:images',
     'watch:js',
+    'watch:docs:js',
     'watch:root',
     'watch:styles',
     cb
@@ -150,6 +165,10 @@ gulp.task('watch:images', (cb) => {
 })
 gulp.task('watch:js', (cb) => {
   gulp.watch(paths.js.watch, ['build:js'])
+  cb()
+})
+gulp.task('watch:docs:js', (cb) => {
+  gulp.watch(paths.docsJs.watch, ['build:docs:js'])
   cb()
 })
 gulp.task('watch:root', (cb) => {

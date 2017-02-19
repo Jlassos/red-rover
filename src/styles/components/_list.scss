@@ -10,10 +10,14 @@
     position: relative;
     padding: $base_padding;
     color: $text_dark;
+    border-top: solid 1px $gray_lighter;
     border-bottom: solid 1px $gray_lighter;
     text-decoration: none;
     &:hover {
       text-decoration: none;
+    }
+    & + .item {
+      border-top: none;
     }
   }
 
